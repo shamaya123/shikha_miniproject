@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cofactor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+}
+html{
+
+color: #000000;
+}
+.navbar {
+position:fixed;
+display: flex;
+top:0%;
+width: 100%;
+overflow: hidden;
+background-color: rgb(57, 177, 247);
+z-index: 2000;
+margin-bottom: 0px;
+}
+
+.navbar a {
+  margin: auto;
+float: left;
+font-size: 222%;
+/* font-size: 150%; */
+color: white;
+text-align: center;
+padding: 1% 1% 1% 5%;
+margin-left: 6%;
+font-style: italic;
+}
+.search-container{
+  display: flex;
+float: left;
+color: white;
+text-align: center;
+  margin: auto;
+text-decoration: none;
+
+}
+.search-button{
+  margin-top: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+   padding: 10px;
+  border-radius: 10px;
+}
+.search-box{
+    padding:20px;
+  margin-left: 0px;
+    border-radius: 10px;
+  font-size: 15px;
+}
+.log{
+  margin: auto;
+float: left;
+color: white;
+text-align: center;
+padding: 1.5% 2% 1% 1%;
+text-decoration: none;
+
+}
+.lb{
+        color:blue;
+        
+        font-size: 150%;
+        padding:2% 5% 2% 2%;
+        font-family: serif;
+        cursor: pointer;
+        border: 2px solid paleturquoise;
+        border-radius: 5.5px;
+      }
+.cart{
+float: left;
+padding:20px;
+font-size: 100%;
+cursor: pointer;
+
+}
+.cart img{
+  float: left;
+
+width:20%;
+height: 20%;
+border-radius: 50%;
+}
+
+body #div1{
+margin-left: 10px;
+/* font-size: 3rem; */
+/* font-family: 'Courier New', Courier, monospace; */
+}
+.navbar2 {
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(253, 253, 255);
+    z-index: 2000;
+      /*position:fixed;  
+ top:1%;*/
+  }
+
+  a{
+      list-style-type: none;
+      text-decoration: none;
+}
+  .navbar2 a {
+    /* text-decoration: underline; */
+    float: left;
+    font-size: 200%;
+    color: rgb(20, 20, 20);
+    text-align: center;
+    padding: 1% 2% 1% 0%;
+    margin-left: 2%;
+    margin-top:6%;
+    font-style: italic;
+    color:rgb(245, 106, 106);
+    text-decoration: underline;
+    
+}
+a {
+    list-style-type: none;
+    text-decoration: none;
+  }
+  .navbar2 a:active{
+    
+    cursor: pointer;
+    color: #3916ff;
+  } 
+  
+
+</style>
+</head>
+<body>
+    
+       
+  <header class="home" id="home">
+    <div class="dis">
+      <div class="navbar">
+        <a href="../css3.html">Maths Formula</a>
+        <div class="search-container">
+          <input type="text" placeholder="Search for Topics,Chapters..." name="search" class="search-box" size="40">
+          <div> <button type="submit" class="search-button"><i class="fa fa-search" style="color: blue;"></i></button>
+          </div>
+        </div>
+        <div class="log">
+          <button class="lb">Login</button>
+        </div>
+        <div class="cart">
+          <!--<div><img src="images/Logo.png" alt=""></div>-->
+          <div>
+            <a href="../Calculator/index.html" target="_blank" style="color: #ffffff;font-family: Arial, Helvetica, sans-serif; margin-left: 3px; margin-top: 5px;">
+              Calculator</a>
+          </div>
+
+        </div>
+      </div>
+      <div class="navbar2">
+        <a href="../algebra/algebraa.html" target="_blank">Algebra</a>
+        <a href="../gmtry/geometry.html" target="_blank">Geometry</a>
+        <a href="../matrices/matrix.html" target="_blank">Matrices</a>
+        <a href="../trigo/trigonometry.html" target="_blank">Trigonometry</a>
+        <a href="../calclus/calculus.html" target="_blank">Calculus</a>
+        <a href="../complex/complex_no.html" target="_blank">Complex Numbers</a>
+        <a href="../css3.html" target="_blank">Home</a>
+      </div>
+      
+      <div id="div1"><br><br><br><br><br>
+          <h1>Cofactors</h1><br><br>
+
+        Given a factor a of a number n=ab, the cofactor of a is b=n/a.
+        <br><br>
+        A different type of cofactor, sometimes called a cofactor matrix, is a signed version of a minor M_(ij) defined by
+        <br><br>
+        <img src="t1.PNG" alt=""><br><br>
+         <!-- C_(ij)=(-1)^(i+j)M_(ij) <br><br> -->
+        and used in the computation of the determinant of a matrix A according to
+        <br><br>
+         <!-- |A|=sum_(i=1)^ka_(ij)C_(ij). <br><br>
+        The cofactor can be computed in the Wolfram Language using
+        <br><br>
+          Cofactor[m_List?MatrixQ, {i_Integer, j_Integer}] :=<br><br>
+            (-1)^(i+j) Det[Drop[Transpose[<br><br>
+              Drop[Transpose[m], {j}]], {i}<br><br>
+            ]]<br><br>
+        which is the equivalent of the (i,j)th component of the CofactorMatrix defined below.
+        <br><br>
+          MinorMatrix[m_List?MatrixQ] :=<br><br>
+            Map[Reverse, Minors[m], {0, 1}]<br><br>
+          CofactorMatrix[m_List?MatrixQ] :=<br><br>
+            MapIndexed[#1 (-1)^(Plus @@ #2)&,<br><br>
+              MinorMatrix[m],{2}]<br><br>
+        Cofactors can be computed using Cofactor[m, {i, j}] in the Wolfram Language package Combinatorica` .
+        <br><br><br><br> -->
+        <img src="t2.PNG" alt=""><br><br><br><br>
+Example:<br><br>
+        <img src="t3.PNG" alt=""><br><br><br><br>
+        Example:<br><br>
+        <img src="t4.PNG" alt=""><br><br><br><br>
+        <!-- <img src="t4.PNG" alt=""><br><br><br><br> -->
+      </div>
+     
+    
+</body>
+</html>

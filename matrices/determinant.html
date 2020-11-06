@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>determinant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+}
+html{
+
+color: #000000;
+}
+.navbar {
+position:fixed;
+display: flex;
+top:0%;
+width: 100%;
+overflow: hidden;
+background-color: rgb(57, 177, 247);
+z-index: 2000;
+margin-bottom: 0px;
+}
+
+.navbar a {
+  margin: auto;
+float: left;
+font-size: 222%;
+/* font-size: 150%; */
+color: white;
+text-align: center;
+padding: 1% 1% 1% 5%;
+margin-left: 6%;
+font-style: italic;
+}
+.search-container{
+  display: flex;
+float: left;
+color: white;
+text-align: center;
+  margin: auto;
+text-decoration: none;
+
+}
+.search-button{
+  margin-top: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+   padding: 10px;
+  border-radius: 10px;
+}
+.search-box{
+    padding:20px;
+  margin-left: 0px;
+    border-radius: 10px;
+  font-size: 15px;
+}
+.log{
+  margin: auto;
+float: left;
+color: white;
+text-align: center;
+padding: 1.5% 2% 1% 1%;
+text-decoration: none;
+
+}
+.lb{
+        color:blue;
+        
+        font-size: 150%;
+        padding:2% 5% 2% 2%;
+        font-family: serif;
+        cursor: pointer;
+        border: 2px solid paleturquoise;
+        border-radius: 5.5px;
+      }
+.cart{
+float: left;
+padding:20px;
+font-size: 100%;
+cursor: pointer;
+
+}
+.cart img{
+  float: left;
+
+width:20%;
+height: 20%;
+border-radius: 50%;
+}
+
+body #div1{
+margin-left: 10px;
+/* font-size: 3rem; */
+/* font-family: 'Courier New', Courier, monospace; */
+}
+.navbar2 {
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(253, 253, 255);
+    z-index: 2000;
+      /*position:fixed;  
+ top:1%;*/
+  }
+
+  a{
+      list-style-type: none;
+      text-decoration: none;
+}
+  .navbar2 a {
+    /* text-decoration: underline; */
+    float: left;
+    font-size: 200%;
+    color: rgb(20, 20, 20);
+    text-align: center;
+    padding: 1% 2% 1% 0%;
+    margin-left: 2%;
+    margin-top:6%;
+    font-style: italic;
+    color:rgb(245, 106, 106);
+    text-decoration: underline;
+    
+}
+a {
+    list-style-type: none;
+    text-decoration: none;
+  }
+  .navbar2 a:active{
+    
+    cursor: pointer;
+    color: #3916ff;
+  } 
+  
+</style>
+</head>
+<body>
+    
+       
+  <header class="home" id="home">
+    <div class="dis">
+      <div class="navbar">
+        <a href="../css3.html">Maths Formula</a>
+        <div class="search-container">
+          <input type="text" placeholder="Search for Topics,Chapters..." name="search" class="search-box" size="40">
+          <div> <button type="submit" class="search-button"><i class="fa fa-search" style="color: blue;"></i></button>
+          </div>
+        </div>
+        <div class="log">
+          <button class="lb">Login</button>
+        </div>
+        <div class="cart">
+          <!--<div><img src="images/Logo.png" alt=""></div>-->
+          <div>
+            <a href="../Calculator/index.html" target="_blank" style="color: #ffffff;font-family: Arial, Helvetica, sans-serif; margin-left: 3px; margin-top: 5px;">
+              Calculator</a>
+          </div>
+
+        </div>
+      </div>
+      <div class="navbar2">
+        <a href="../algebra/algebraa.html" target="_blank">Algebra</a>
+        <a href="../gmtry/geometry.html" target="_blank">Geometry</a>
+        <a href="../matrices/matrix.html" target="_blank">Matrices</a>
+        <a href="../trigo/trigonometry.html" target="_blank">Trigonometry</a>
+        <a href="../calclus/calculus.html" target="_blank">Calculus</a>
+        <a href="../complex/complex_no.html" target="_blank">Complex Numbers</a>
+        <a href="../css3.html" target="_blank">Home</a>
+      </div>
+      
+      <div id="div1"><br><br><br><br><br>
+        <H1>Determinants</H1><br><br>
+        Determinants are mathematical objects that are very useful in the analysis and solution of systems of linear equations. As shown by Cramer's rule, a nonhomogeneous system of linear equations has a unique solution iff the determinant of the system's matrix is nonzero (i.e., the matrix is nonsingular). For example, eliminating x, y, and z from the equations
+        <br><br>
+        a1x+a2y+a3z	=	0.....(1)	<br><br>
+        <!-- (1) -->
+        b1x+b2y+b3z	=	0....(2)	<br><br>
+        <!-- (2) -->
+        c1x+c2y+c3z	=	0	....(3)
+        <!-- (3) --><br><br>
+        gives the expression<br><br>
+    <img src="t9.PNG" alt="">
+         <!-- a_1b_2c_3-a1b3c_2+a_2b_3c_1-a_2b_1c_3+a_3b_1c_2-a_3b_2c_1=0, 	....(4) -->
+        <!-- (4) --><br><br>
+        which is called the determinant for this system of equation. Determinants are defined only for square matrices.
+        <br><br>
+        
+        If the determinant of a matrix is 0, the matrix is said to be singular, and if the determinant is 1, the matrix is said to be unimodular.
+        <br><br>
+        The determinant of a matrix A,<br><br>
+        <img src="t10.PNG" alt="">
+        <br><br>
+        is commonly denoted det(A), |A|, or in component notation as sum(+/-a_1b_2c_3...), D(a_1b_2c_3...), or |a_1b_2c_3...| (Muir 1960, p. 17). Note that the notation det(A) may be more convenient when indicating the absolute value of a determinant, i.e., |det(A)| instead of ||A||. The determinant is implemented in the Wolfram Language as Det[m].
+        <br><br>
+        <img src="t11.PNG" alt=""><br><br>
+        and M_(ij) is the minor of matrix A formed by eliminating row i and column j from A. This process is called determinant expansion by minors (or "Laplacian expansion by minors," sometimes further shortened to simply "Laplacian expansion").
+        <br><br>
+A determinant can also be computed by writing down all permutations of {1,...,n}, taking each permutation as the subscripts of the letters a, b, ..., and summing with signs determined by epsilon_p=(-1)^(i(p)), where i(p) is the number of permutation inversions in permutation p (Muir 1960, p. 16), and epsilon_(n_1n_2...) is the permutation symbol. For example, with n=3, the permutations and the number of inversions they contain are 123 (0), 132 (1), 213 (1), 231 (2), 312 (2), and 321 (3), so the determinant is given by
+<br><br>
+<img src="t12.PNG" alt=""><br><br>
+<img src="t13.PNG" alt=""><br><br>
+
+Important properties of the determinant include the following, which include invariance under elementary row and column operations.
+<br><br>
+1. Switching two rows or columns changes the sign.
+<br><br>
+2. Scalars can be factored out from rows and columns.
+<br><br>
+3. Multiples of rows and columns can be added together without changing the determinant's value.
+<br><br>
+4. Scalar multiplication of a row by a constant c multiplies the determinant by c.
+<br><br>
+5. A determinant with a row or column of zeros has value 0.
+<br><br>
+6. Any determinant with two rows or columns equal has value 0.
+<br><br>
+<img src="t14.PNG" alt="">
+<br><br>
+<img src="t15.PNG" alt="">
+<br><br><br><br>
+Example:<br><br>
+<img src="t16.PNG" alt="">
+<br><br>
+
+<br><br>
+Example:<br><br>
+<img src="t17.PNG" alt="">
+<br><br>
+
+<br><br>
+      </div>
+      
+</body>
+</html>
