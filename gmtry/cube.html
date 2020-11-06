@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cube</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+
+  color: #000000;
+  }
+  .navbar {
+    position:fixed;
+    display: flex;
+    top:0%;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(57, 177, 247);
+    z-index: 2000;
+    margin-bottom: 0px;
+  }
+
+  .navbar a {
+      margin: auto;
+    float: left;
+    font-size: 222%;
+    /* font-size: 150%; */
+    color: white;
+    text-align: center;
+    padding: 1% 1% 1% 5%;
+    margin-left: 6%;
+    font-style: italic;
+  }
+  .search-container{
+      display: flex;
+    float: left;
+    color: white;
+    text-align: center;
+      margin: auto;
+    text-decoration: none;
+
+  }
+  .search-button{
+      margin-top: 10px;
+      margin-left: 10px;
+      cursor: pointer;
+       padding: 10px;
+      border-radius: 10px;
+  }
+  .search-box{
+        padding:20px;
+      margin-left: 0px;
+        border-radius: 10px;
+      font-size: 15px;
+  }
+  .log{
+      margin: auto;
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 1.5% 2% 1% 1%;
+    text-decoration: none;
+
+  }
+  .lb{
+        color:blue;
+        
+        font-size: 150%;
+        padding:2% 5% 2% 2%;
+        font-family: serif;
+        cursor: pointer;
+        border: 2px solid paleturquoise;
+        border-radius: 5.5px;
+      }
+  .cart{
+    float: left;
+    padding:20px;
+    font-size: 100%;
+    cursor: pointer;
+
+  }
+  .cart img{
+      float: left;
+
+    width:20%;
+    height: 20%;
+    border-radius: 50%;
+  }
+  
+  body #div1{
+    margin-left: 10px;
+    /* font-size: 3rem; */
+    /* font-family: 'Courier New', Courier, monospace; */
+  }
+  .navbar2 {
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(253, 253, 255);
+    z-index: 2000;
+      /*position:fixed;  
+ top:1%;*/
+  }
+
+  a{
+      list-style-type: none;
+      text-decoration: none;
+}
+  .navbar2 a {
+    /* text-decoration: underline; */
+    float: left;
+    font-size: 200%;
+    color: rgb(20, 20, 20);
+    text-align: center;
+    padding: 1% 2% 1% 0%;
+    margin-left: 2%;
+    margin-top:6%;
+    font-style: italic;
+    color:rgb(245, 106, 106);
+    text-decoration: underline;
+    
+}
+a {
+    list-style-type: none;
+    text-decoration: none;
+  }
+  .navbar2 a:active{
+    
+    cursor: pointer;
+    color: #3916ff;
+  } 
+  
+  
+    </style>
+</head>
+<body>
+    
+  <header class="home" id="home">
+    <div class="dis">
+      <div class="navbar">
+        <a href="../css3.html">Maths Formula</a>
+        <div class="search-container">
+          <input type="text" placeholder="Search for Topics,Chapters..." name="search" class="search-box" size="40">
+          <div> <button type="submit" class="search-button"><i class="fa fa-search" style="color: blue;"></i></button>
+          </div>
+        </div>
+        <div class="log">
+          <button class="lb">Login</button>
+        </div>
+        <div class="cart">
+          <!--<div><img src="images/Logo.png" alt=""></div>-->
+          <div>
+            <a href="../Calculator/index.html" target="_blank" style="color: #ffffff;font-family: Arial, Helvetica, sans-serif; margin-left: 3px; margin-top: 5px;">
+              Calculator</a>
+          </div>
+
+        </div>
+      </div>
+      <div class="navbar2">
+        <a href="../algebra/algebraa.html" target="_blank">Algebra</a>
+        <a href="../gmtry/geometry.html" target="_blank">Geometry</a>
+        <a href="../matrices/matrix.html" target="_blank">Matrices</a>
+        <a href="../trigo/trigonometry.html" target="_blank">Trigonometry</a>
+        <a href="../calclus/calculus.html" target="_blank">Calculus</a>
+        <a href="../complex/complex_no.html" target="_blank">Complex Numbers</a>
+        <a href="../css3.html" target="_blank">Home</a>
+      </div>
+      
+      <div id="div1"><br><br><br><br><br>
+
+        <h1>Cube</h1><br><br><br>
+
+        
+        <h2>Volume of a Cube:</h2> <br><br>
+        <!-- <h2>Volume of a Cube:</h2> <br><br> -->
+        <img src="g1.PNG" alt=""><br><br>
+        Since all of the edges of a cube are of equal length, there is no need to differentiate between the length, width and height.  The volume of a cube is determined by multiplying the length of three edges of the cube.  Let "a" define the length of an edge of the cube.  
+        <br><br>
+        Then the volume formula is defined as:
+        <br><br>
+        V = a × a × a
+        <br><br>
+        This formula is also written as V = a³.
+        <br><br>
+        If a = 5 feet, then the volume is found like this:
+        <br><br>
+        V = (5)³ = 5 × 5 × 5 = 125:  Since each value is a measurement of feet, the volume is therefore 125 cubic feet. 
+        <br><br>
+        <br>
+        Example 1: Find the volume of a solid cube shape box whose side is 13m.
+        <br><br>
+        Solution:
+        <br><br>
+        Given that: side a = 3m
+        <br><br>
+        Volume of the cube is therefore:
+        <br><br>
+        V = a³<br><br>
+        V = 13³<br><br>
+        V = 2197 m<span style="vertical-align: super">3</span><br><br>
+        <br><br>
+        Example 2: Find the measure of volume of a cube for the given side length is 20 inches?
+        <br><br>
+        Solution:
+        <br><br>
+        Given that: Side a = 20 inches
+        <br><br>
+        Volume of the cube is therefore:
+        <br><br>
+        V = a³
+        <br><br>
+        V = 20³
+        <br><br>
+        V = 8000 in<span style="vertical-align: super">3</span>
+        <br><br>
+        Therefore, volume of a cube is 8000 in<span style="vertical-align: super">3</span>.
+        <br><br>
+        <br><br>
+        
+        Example 3: Find the volume of a cube for the given side length 12.5 meter?
+        <br><br>
+        Solution:
+        <br><br>
+        Given that: Side a = 12.5 m
+        <br><br>
+        V = a³
+        <br><br>
+        V = 12.5³
+        <br><br>
+        V = 1953.125 m<span style="vertical-align: super">3</span>
+        <br><br>
+        Therefore, the volume of the cube is 1953.125 cubic meter.
+        <br><br>
+        
+        <br><br>
+        Example 4: A 5 cm cube is cut into as many 1 cm cubes as possible. What is the ratio of the surface area of the larger cube to the sum of the surface areas of the smaller cubes?
+        <br><br>
+        Solution:
+        <br><br>
+        The volume of the larger cube = 53 = 125 cm<span style="vertical-align: super">3</span>.
+        <br><br>
+        The volume of each of the smaller cubes = 13 = 1 cm<span style="vertical-align: super">3</span>. Therefore, one would get 125 smaller cubes out of the lager cube.
+        <br><br>
+        The surface area of the larger cube = 6a2 = 6(52) = 6x25 = 150 cm<span style="vertical-align: super">2</span>.
+        <br><br>
+        The surface area of each of the smaller cubes is:  6(12) = 6 cm<span style="vertical-align: super">2</span>.
+        <br><br>
+        The total surface area of all the smaller cubes is: 125 × 6 = 750 cm<span style="vertical-align: super">2</span>.
+        <br><br>
+        Therefore, the ratio is: 150: 750 = 1: 5
+        <br><br>
+        <br><br>
+        Example 5: A large cube is formed from the material obtained by melting three smaller cubes of 3, 4 and 5 cm side. What is the ratio of the total surface areas of the smaller cubes and the large cubes?
+        <br><br>
+        Solution:
+        <br><br>
+        Volume of the large cube = (33 + 43 + 53) = 216 cm<span style="vertical-align: super">3</span>.
+        <br><br>
+        Let the edge of the large cube be a.
+        <br><br>
+        a<span style="vertical-align: super">3</span> = 216
+        <br><br>
+        a = 6 cm
+        <br><br>
+        
+        Required ratio = total surface area of the smaller cubes / the surface area of the larger cube
+        <br><br>
+        Required ratio = (6 × (32+42+52)) : (6 × 62) = 25:18
+        <br><br>
+        <br><br>
+        Example 6:  A cube has a surface area of 54 square centimeters. What is the volume of the cube?
+        <br><br>
+        Solution:
+        <br><br>
+        The surface area of the cube is:
+        <br><br>
+        SA = 6a<span style="vertical-align: super">2</span>
+        <br><br>
+        Thus: a<span style="vertical-align: super">2</span> = SA/6 = 54/6 = 9 and a = 3 cm
+        <br><br>
+        
+        The volume of the cube is:
+        <br><br>
+        V = a<span style="vertical-align: super">3</span>
+        <br><br>
+        V = 33
+        <br><br>
+        V = 27 cm<span style="vertical-align: super">3</span>
+        <br><br><br><br>
+        <div class="iframe-container" style="margin-left: 20%;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/PhLc6B5WXtc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <br><br><br>
+        <!-- jkjkjkjk -->
+        <h2>Surface Area of Cube</h2><br><br>
+        <br><br>       
+
+(a is the length of the side of each edge of the cube) .
+<br>
+<br>
+
+If we want to calculate the area of a cube then it’s always better to see each surface as a square and a cube is made up of six equal squares. Considering each side of the square as “a”, then the area of each square will be a<span style="vertical-align: super">2</span>. Therefore, the surface area of the cube will be 6a<span style="vertical-align: super">2</span>.
+<br><br>
+
+
+Surface area is the measure of how much exposed of area a solid object has, expressed in square units. Mathematical description of the surface area is considerably more involved than the definition of arc length of a curve. For polyhedra (objects with flat polygonal faces) the surface area is the sum of the areas of its faces. A cube is called a hexahedron because it is a polyhedron that has 6 (hexa- means 6) faces. The sum of the areas of all external surfaces of a three-dimensional object is called its total surface area (TSA).
+<br><br>
+
+The longest diagonal of the cube (i.e., the line joining one vertex on the top face to the diagonally opposite vertex on the bottom face) is called the diagonal of the cube. The length of the diagonal of the cube is 3√(a) and The lateral surface area of a cube = 4 a<span style="vertical-align: super">2</span>.
+<br><br>
+<br><br>
+Example 1: Find the surface area if the length of one side is 1/2 cm.
+<br><br>
+Solution:
+<br><br>
+SA = 6 × a2
+<br><br>
+SA = 6 × (1/2)2
+<br><br>
+SA = 6 × 1/2 × 1/2
+<br><br>
+SA = 6 × 1/4
+<br><br>
+SA = 1.5 cm<span style="vertical-align: super">2</span>
+<br><br>
+
+<br><br>
+Example 2: Find the Surface area of a cube of side length 8 cm.
+<br><br>
+Solution:
+<br><br></span>
+SA = 6 × a<span style="vertical-align: super">2</span>
+<br><br>
+SA = 6 × (8)<span style="vertical-align: super">2</span>
+<br><br>
+SA = 6 × (64)
+<br><br>
+SA = 384 cm<span style="vertical-align: super">2</span>
+<br><br>
+
+<br><br>
+Example 3: Find the total surface area of a box whose edges are all 4.5 cm long.
+<br><br>
+
+Solution:
+<br><br>
+
+
+SA = 6 × l2
+<br><br>
+SA = 6 × 4.52
+<br><br>
+SA = 121.5
+<br><br>
+
+<br><br>
+Example 4: A 5 cubic centimeter cube is painted on all its side. If it is sliced into smaller cubes, that each has a volume of 1 cubic centimeter, how many smaller cubes will have exactly one of their sides painted?
+<br><br>
+Solution:
+<br><br>
+When a 5 cc (cubic centimeter) cube is sliced into 1 cc cubes, we will get 5*5*5 = 125 1 cc cubes. In each side of the larger cube, the smaller cubes on the edges will have more than one of their sides painted. Therefore, the cubes which are not on the edge of the larger cube and that lie on the facing sides of the larger cube will have exactly one side painted.
+<br><br></span>
+
+In each face of the larger cube, there will be 5*5 = 25 cubes. Of these, there will be 16 cubes on the edge and 3*3 = 9 cubes which are not on the edge. Therefore, there will be 9 × 1 cc cubes per face that will have exactly one of their sides painted.
+<br><br>
+
+In total, there will be 9*6 = 54 such cubes.
+<br><br>
+
+<br><br>
+Example 5: A cube of length 4 cm is cut into smaller cubes with 1 cm in length. What is the percentage increase in the surface area after such cutting?
+<br><br>
+Solution:
+<br><br>
+The volume of the big cube:
+<br><br>
+V = a<span style="vertical-align: super"><span style="vertical-align: super">3</span>
+<br><br>
+V = 43
+<br><br>
+V = 64 cc
+<br><br>
+</span>
+When it is cut into 1 cm cube, the volume of each of the cubes = 1cc. Hence, there will be 64 such cubes.
+<br><br>
+
+The surface area of the smaller cubes = 6 (12) = 6 cm<span style="vertical-align: super"><span style="vertical-align: super">2</span>.
+<br><br>
+
+Therefore, the surface area of 64 such cubes = 64 * 6 = 384 cm<span style="vertical-align: super"><span style="vertical-align: super">2</span>.
+<br><br>
+The surface area of the big (original) cube = 6(42) = 6*16 = 96 cm<span style="vertical-align: super"><span style="vertical-align: super">2</span>.
+<br><br>
+
+
+% increase = (384 – 96) / 96 × 100 = 300%
+<br><br><br><br>
+Example 6: A cube whose sides are 10.7 cm in length. Find the surface area of the cube.
+<br><br>
+Solution:
+<br><br>
+Given that:
+<br><br>
+Side length (a) = 10.7 cm
+<br><br>
+
+Surface area of the cube:
+<br><br>
+SA = 6 a<span style="vertical-align: super">2</span>
+<br><br>
+SA = 6 × (10.7)<span style="vertical-align: super">2</span>
+<br><br>
+SA = 686.94 cm<span style="vertical-align: super">2<span style="vertical-align: super"><span style="vertical-align: super"></span>
+<br><br>
+<br><br>
+Example 7: Find the surface area of a cube whose side is 1/6 cm.
+<br><br>
+Solution:
+<br><br>
+Given that:
+<br><br>
+Length of side is 6 cm or a = 1/6
+<br><br>
+
+Surface area of the cube:
+<br><br>
+SA = 6 a<span style="vertical-align: super">2</span>
+<br><br>
+SA = 6 × (1/6)<span style="vertical-align: super">2</span>
+<br><br>
+SA = 1/6 cm<span style="vertical-align: super">2</span>
+<br><br><br><br>
+</div>
+
+      
+</body>
+</html>

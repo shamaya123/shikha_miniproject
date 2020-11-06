@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>circle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+
+  color: #000000;
+  }
+  .navbar {
+    position:fixed;
+    display: flex;
+    top:0%;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(57, 177, 247);
+    z-index: 2000;
+    margin-bottom: 0px;
+  }
+
+  .navbar a {
+      margin: auto;
+    float: left;
+    font-size: 222%;
+    /* font-size: 150%; */
+    color: white;
+    text-align: center;
+    padding: 1% 1% 1% 5%;
+    margin-left: 6%;
+    font-style: italic;
+  }
+  .search-container{
+      display: flex;
+    float: left;
+    color: white;
+    text-align: center;
+      margin: auto;
+    text-decoration: none;
+
+  }
+  .search-button{
+      margin-top: 10px;
+      margin-left: 10px;
+      cursor: pointer;
+       padding: 10px;
+      border-radius: 10px;
+  }
+  .search-box{
+        padding:20px;
+      margin-left: 0px;
+        border-radius: 10px;
+      font-size: 15px;
+  }
+  .log{
+      margin: auto;
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 1.5% 2% 1% 1%;
+    text-decoration: none;
+
+  }
+  .lb{
+        color:blue;
+        
+        font-size: 150%;
+        padding:2% 5% 2% 2%;
+        font-family: serif;
+        cursor: pointer;
+        border: 2px solid paleturquoise;
+        border-radius: 5.5px;
+      }
+  .cart{
+    float: left;
+    padding:20px;
+    font-size: 100%;
+    cursor: pointer;
+
+  }
+  .cart img{
+      float: left;
+
+    width:20%;
+    height: 20%;
+    border-radius: 50%;
+  }
+  
+  body #div1{
+    margin-left: 10px;
+    /* font-size: 2rem; */
+    /* font-family: 'Courier New', Courier, monospace; */
+  }
+  .navbar2 {
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(253, 253, 255);
+    z-index: 2000;
+      /*position:fixed;  
+ top:1%;*/
+  }
+
+  a{
+      list-style-type: none;
+      text-decoration: none;
+}
+  .navbar2 a {
+    /* text-decoration: underline; */
+    float: left;
+    font-size: 200%;
+    color:rgb(245, 106, 106);
+    text-decoration: underline;
+    color: rgb(20, 20, 20);
+    text-align: center;
+    padding: 1% 2% 1% 0%;
+    margin-left: 2%;
+    margin-top:6%;
+    font-style: italic;
+    
+}
+a {
+    list-style-type: none;
+    text-decoration: none;
+  }
+  .navbar2 a:active{
+    
+    cursor: pointer;
+    color: #3916ff;
+  } 
+  
+ 
+    </style>
+</head>
+<body>
+
+    <header class="home" id="home">
+        <div class="dis">
+          <div class="navbar">
+            <a href="../css3.html">Maths Formula</a>
+            <div class="search-container">
+              <input type="text" placeholder="Search for Topics,Chapters..." name="search" class="search-box" size="40">
+              <div> <button type="submit" class="search-button"><i class="fa fa-search" style="color: blue;"></i></button>
+              </div>
+            </div>
+            <div class="log">
+              <button class="lb">Login</button>
+            </div>
+            <div class="cart">
+              <!--<div><img src="images/Logo.png" alt=""></div>-->
+              <div>
+                <a href="../Calculator/index.html" target="_blank" style="color: #ffffff;font-family: Arial, Helvetica, sans-serif; margin-left: 3px; margin-top: 5px;">
+                  Calculator</a>
+              </div>
+    
+            </div>
+          </div>
+          <div class="navbar2">
+            <a href="../algebra/algebraa.html" target="_blank">Algebra</a>
+            <a href="../gmtry/geometry.html" target="_blank">Geometry</a>
+            <a href="../matrices/matrix.html" target="_blank">Matrices</a>
+            <a href="../trigo/trigonometry.html" target="_blank">Trigonometry</a>
+            <a href="../calclus/calculus.html" target="_blank">Calculus</a>
+            <a href="../complex/complex_no.html" target="_blank">Complex Numbers</a>
+            <a href="../css3.html" target="_blank">Home</a>
+          </div>
+          
+    <div id="div1"><br><br><br><br><br>
+        <h1>Circle</h1><br><br>
+        <h2>Area of Circle</h2>
+        <br><br><img src="g2.PNG" alt="">
+        <br><br>
+        r: radius
+        <br><br>
+d: diameter
+<br><br>
+A: Area
+<br><br>
+
+The area of a circle is given by:
+<br><br>
+A = Π ∙ r2 or A = Π ∙ (d/2)<span style="vertical-align: super">2</span>
+<br><br>
+
+
+Π defines the ratio of any circle's circumference to its diameter and is approximately equal to 3.141593, however the value 3.14 is often used.
+<br><br>
+
+<br><br>
+
+ 
+
+Example 1: The diameter of a circle is 16 inches. What is the lateral area?
+<br><br>
+
+Solution: A = Pi * r<span style="vertical-align: super">2</span>
+<br><br>
+
+Radius = d/2 = 16/2 = 8
+<br><br>
+A = 3.14 * 8<span style="vertical-align: super">2</span>   
+<br><br>
+A = 3.14 * (64)  
+<br><br>
+A = 200.96 cm<span style="vertical-align: super">2</span>
+<br><br>
+ 
+
+ 
+<br><br>
+Example 2: From a circular sheet of radius 6 cm, a circle of radius 3 cm is removed. Find the area of the remaining sheet.
+<br><br>
+ 
+
+Solution: Here, outer radius, R = 6 cm
+<br><br>
+Inner Radius, r = 3 cm
+<br><br>
+Area of remaining sheet = Outer area - Inner area
+<br><br>
+                                             = Pi * (R<span style="vertical-align: super">2</span> - r<span style="vertical-align: super">2</span>)
+                                             <br><br>
+                                             = 3.14 ( 6<span style="vertical-align: super">2</span>  - 3<span style="vertical-align: super">2</span>)
+                                             <br><br>
+                                             = 3.14 (36 - 9)
+                                             <br><br>
+                                             = 3.14 x 27
+                                             <br><br>
+                                             = 84.78 cm<span style="vertical-align: super">2</span>
+                                             <br><br>
+Hence the area of remaining sheet is 28.26 cm<span style="vertical-align: super">2</span>
+<br><br>
+ 
+<br><br>
+Example 3: Find the radius of the circle when its area is known to be 56.52 square centimeters.
+<br><br>
+Solution: We know that the area of the circle is given by: A = Pi * r<span style="vertical-align: super">2</span>
+<br><br>
+ 
+
+Isolating r we will get: r<span style="vertical-align: super">2</span> = A / Pi or r = √(A/Pi)
+<br><br>
+Thus:<br><br>
+
+r = √(56.52/3.14) = √(18) centimeters
+<br><br>
+ 
+
+ 
+<br><br>
+Example 4: Vandana uses a lawn sprinkler to water the circular region of the lawn having 30 ft in diameter. Calculate the area watered on the lawn.
+<br><br>
+Solution:
+<br><br>
+Step 1: The shape of watered region is circular. Formula for area A = Pi * r<span style="vertical-align: super">2</span> where r is the radius of the circle.
+<br><br>
+Step 2: The diameter of the circular region is 30 ft i.e. r = 30/2 = 15ft
+<br><br>
+A = Pi * r<span style="vertical-align: super">2</span>
+<br><br>
+= 3.14 * 15<span style="vertical-align: super">2</span>
+<br><br>
+=706.5 ft<span style="vertical-align: super">2</span>
+<br><br>
+ 
+
+<br><br>
+
+Example 5: Determine the area of a circle whose radius is 5 meter.
+<br><br>
+A = Π ∙ r<span style="vertical-align: super">2</span> = 3.14 ∙ 5<span style="vertical-align: super">2</span> = 78.5 m<span style="vertical-align: super">2</span>
+<br><br>
+
+
+<br><br>
+Example 6: Determine the area of a circle whose diameter is 10 meter.
+<br><br>
+A = Π ∙ (d/2)<span style="vertical-align: super">2</span> = 3.14 ∙ (10/2)<span style="vertical-align: super">2</span> = 78.5 m<span style="vertical-align: super">2</span>
+<br><br>
+Note that radius = diameter / 2
+<br><br><br><br><br><br>
+
+
+
+<!-- mnmcn -->
+<h2>Perimeter of Circle</h2>
+<br><br><img src="g3.PNG" alt="">
+<br><br>
+Perimeter is the distance around a closed figure and is typically measured in millimetres (mm), centimetres (cm), metres (m) and kilometres (km).  These units are related as follows:
+<br><br>
+ 
+
+10 mm = 1 cm
+<br><br>
+100 cm = 1 m
+<br><br>
+1000 m = 1 km
+<br><br>
+ 
+
+The word 'perimeter' is also sometimes used instead of circumference.
+<br><br>
+ 
+
+If we know the radius
+<br><br>
+Given the radius of a circle, the circumference or perimeter can be calculated using the formula bwloe:
+<br><br>
+ 
+
+Perimeter (P) = 2 · π · R
+<br><br>
+where:<br><br>
+R  is the radius of the circle
+<br><br>
+π  is Pi, approximately 3.142
+<br><br>
+
+ 
+
+If we know the diameter
+<br><br>
+If we know the diameter of a circle, the circumference can be found using the formula
+<br><br>
+Perimeter (P) = π · D
+<br><br>
+where:<br><br>
+D  is the diameter of the circle
+<br><br>
+π  is Pi, approximately 3.142  
+<br><br>
+
+ 
+
+If we know the area 
+<br><br>
+If we know the area of a circle, the circumference can be found using the formula:
+<br><br>
+Perimeter (P) = √(4 · π · A )
+<br><br>
+ 
+
+where:<br><br>
+A  is the area of the circle
+<br><br>
+π  is Pi, approximately 3.142
+<br><br>
+ 
+
+ 
+
+Example 1:
+<br><br>
+A circular flower-bed has a radius of 9 m.  Find the perimeter/circumference of the flower-bed.
+<br><br>
+
+
+
+Solution:
+<br><br>
+P = 2 · π · R
+<br><br>
+P = 2 · 3.1416 · 9
+<br><br>
+P = 56.5487 cm
+<br><br>
+ 
+
+So, the perimeter/circumference of the flower-bed is 56.5487 m.
+<br><br>
+ 
+
+ 
+<br><br>
+Example 2: Find the perimeter of the given circle whose diameter is 4.4 cm.
+<br><br>
+
+ 
+
+Solution:
+<br><br>
+Given that:
+<br><br>
+Diameter of the circle (D) = 4.4 cm.
+<br><br>
+We know the formula to find the perimeter of the circle if the diameter is given, namely π· D.
+<br><br>
+Substitute the diameter 4.4 and Pi value as 3.14 in the above formula.
+<br><br>
+ 
+
+Perimeter = (3.14)(4.4) = 13.82
+<br><br>
+ 
+
+Therefore 13.82 cm is the perimeter of the given circle.
+<br><br>
+ 
+
+ 
+<br><br>
+Example 3: If the radius is 11.7 cm. Find perimeters (circumference) of the circle.
+<br><br>
+Solution:
+<br><br>
+ 
+
+Given that:
+<br><br>
+Radius (r) = 11.7cm
+<br><br>
+Perimeter (circumference) of circle P = 2 π r
+<br><br>
+Substitute the r value in the formula, we have:
+<br><br>
+P = 2 x 3.14 x 11.7
+<br><br>
+P = 79.56 cm
+<br><br>
+ 
+
+Thus, the perimeter of the circle is 79.56cm
+<br><br><br><br>
+ 
+
+ 
+
+Example 4: Find the perimeter and area of the circle, if the radius of the circle is 8cm.
+<br><br>
+Solution: We have given the radius, which is 8cm. So, by using the formula of the perimeter of the circle, we have:
+<br><br>
+P = 2πr
+<br><br>
+P = 2×3.14×8
+<br><br>
+P = 50.24 cm
+<br><br>
+ 
+
+And for the area of the circle:-
+<br><br>
+A = π r2
+<br><br>
+A = 3.14×(8)2
+<br><br>
+A = 200.96cm2
+<br><br>
+ 
+
+ 
+
+<br><br>
+Example 5: The wheel of a bullock cart has a radius of 6 m. If the wheel rotates once how much distance does the cart move?
+<br><br>
+Solution:
+<br><br>
+If the wheel rotates once, the cart will move by a distance equal to the perimeter of the wheel.
+<br><br>
+ 
+
+Step 1:
+<br><br>
+P = 2πr
+<br><br>
+P = 2× 3.14× 6 = 37.68 m
+<br><br>
+ 
+
+Thus, the bullock cart moves 37.68 m in one revolution of the wheel.
+<br><br>
+<br><br>
+
+
+    </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rectangle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+
+  color: #000000;
+  }
+  .navbar {
+    position:fixed;
+    display: flex;
+    top:0%;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(57, 177, 247);
+    z-index: 2000;
+    margin-bottom: 0px;
+  }
+
+  .navbar a {
+      margin: auto;
+    float: left;
+    font-size: 222%;
+    /* font-size: 150%; */
+    color: white;
+    text-align: center;
+    padding: 1% 1% 1% 5%;
+    margin-left: 6%;
+    font-style: italic;
+  }
+  .search-container{
+      display: flex;
+    float: left;
+    color: white;
+    text-align: center;
+      margin: auto;
+    text-decoration: none;
+
+  }
+  .search-button{
+      margin-top: 10px;
+      margin-left: 10px;
+      cursor: pointer;
+       padding: 10px;
+      border-radius: 10px;
+  }
+  .search-box{
+        padding:20px;
+      margin-left: 0px;
+        border-radius: 10px;
+      font-size: 15px;
+  }
+  .log{
+      margin: auto;
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 1.5% 2% 1% 1%;
+    text-decoration: none;
+
+  }
+  .lb{
+        color:blue;
+        
+        font-size: 150%;
+        padding:2% 5% 2% 2%;
+        font-family: serif;
+        cursor: pointer;
+        border: 2px solid paleturquoise;
+        border-radius: 5.5px;
+      }
+  .cart{
+    float: left;
+    padding:20px;
+    font-size: 100%;
+    cursor: pointer;
+
+  }
+  .cart img{
+      float: left;
+
+    width:20%;
+    height: 20%;
+    border-radius: 50%;
+  }
+  
+  body #div1{
+    margin-left: 10px;
+    /* font-size: 3rem; */
+    /* font-family: 'Courier New', Courier, monospace; */
+  }
+  .navbar2 {
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(253, 253, 255);
+    z-index: 2000;
+      /*position:fixed;  
+ top:1%;*/
+  }
+
+  a{
+      list-style-type: none;
+      text-decoration: none;
+}
+  .navbar2 a {
+    /* text-decoration: underline; */
+    float: left;
+    font-size: 200%;
+    color: rgb(20, 20, 20);
+    text-align: center;
+    padding: 1% 2% 1% 0%;
+    margin-left: 2%;
+    margin-top:6%;
+    font-style: italic;
+    color:rgb(245, 106, 106);
+    text-decoration: underline;
+    
+}
+a {
+    list-style-type: none;
+    text-decoration: none;
+  }
+  .navbar2 a:active{
+    
+    cursor: pointer;
+    color: #3916ff;
+  } 
+  
+    </style>
+</head>
+<body>
+
+    <header class="home" id="home">
+        <div class="dis">
+          <div class="navbar">
+            <a href="../css3.html">Maths Formula</a>
+            <div class="search-container">
+              <input type="text" placeholder="Search for Topics,Chapters..." name="search" class="search-box" size="40">
+              <div> <button type="submit" class="search-button"><i class="fa fa-search" style="color: blue;"></i></button>
+              </div>
+            </div>
+            <div class="log">
+              <button class="lb">Login</button>
+            </div>
+            <div class="cart">
+              <!--<div><img src="images/Logo.png" alt=""></div>-->
+              <div>
+                <a href="../Calculator/index.html" target="_blank" style="color: #ffffff;font-family: Arial, Helvetica, sans-serif; margin-left: 3px; margin-top: 5px;">
+                  Calculator</a>
+              </div>
+    
+            </div>
+          </div>
+          <div class="navbar2">
+            <a href="../algebra/algebraa.html" target="_blank">Algebra</a>
+            <a href="../gmtry/geometry.html" target="_blank">Geometry</a>
+            <a href="../matrices/matrix.html" target="_blank">Matrices</a>
+            <a href="../trigo/trigonometry.html" target="_blank">Trigonometry</a>
+            <a href="../calclus/calculus.html" target="_blank">Calculus</a>
+            <a href="../complex/complex_no.html" target="_blank">Complex Numbers</a>
+            <a href="../css3.html" target="_blank">Home</a>
+          </div>
+          
+
+    <div id="div1"><br><br><br><br><br>
+        <h1>Rectangle</h1><br><br><br><br><img src="g7.PNG" alt=""><br><br>
+        <h2>Area of Rectangle</h2><br><br>
+        A quadrilateral is a called rectangle, if it is a parallelogram and each angle measures 90 degrees.
+        <br>
+
+A rectangle is a four sided and closed figure. In a rectangle all opposite sides are parallel and equal. Also in a rectangle all the adjacent sides are perpendicular.  
+<br>
+A rectangle is a quadrilateral and also a parallelogram.
+<br>
+Let us consider a rectangle with length x units and width y units.
+<br>
+Area of the above rectangle = L × W
+<br>
+<br><br><br>
+
+Example 1: Given a rectangle where the length is 5cm and the width is 3cm. Find the area of this rectangle.
+<br>
+Solution: To calculate the area, we can use the formula for the area of a rectangle:
+<br>
+A = L×W
+<br>
+Since the length is given as 5cm, we can substitute L with 5. Similarly, since the width is given as 3cm, we can substitute W with 3. After doing so, we can calculate A, as shown below:
+<br>
+ 
+<br>
+A = L×W
+<br>
+A = 3×5
+<br>
+A = 15
+<br>
+ 
+
+Now, the calculated number 15 only has a meaning if we include the unit for it. Since the given length and width are in cm, the unit for area will be cm2. Hence:
+<br>
+A = 15 cm2
+<br>
+ 
+<br><br><br>
+Example 2: Find the area of the garden, length and width of the garden are respectively 600m and 400m.
+<br>
+Solution:
+<br>
+Area of garden = Length×Width
+<br>
+A = L×W
+<br>
+A = 600×400
+<br>
+A = 240000 m2
+<br><br><br><br>
+ 
+
+Example 3: A white paper has a size of length 20 cm and width 15 cm. Jack has drawn a rectangle in the center of the paper which is 10 cm in length and 5 cm in width and painted the entire rectangle in violet color. Find the area of the violet colored portion and area of white portion.  
+<br>
+Solution: We know that area of a rectangle is length × width.
+<br>
+Here the given paper has the shape of a rectangle.
+<br>
+So the area of the paper is = 20cm x 15cm = 300cm².
+<br>
+And the area of the violet colored rectangle = 10cm x 5cm = 50cm².
+<br>
+So the area of the white portion = 300cm² - 50cm² = 250cm².
+<br>
+ 
+<br><br><br>
+Example 4: The length of a rectangular shaped garden is 250 meters and then the width of the garden is 175 meters. Find the area of the rectangular garden.
+<br>
+Solution: The length of the garden = 250 meter
+<br>
+The width of the garden = 175 meter
+<br>
+Area of the rectangular garden = 250 x 175
+<br>
+                                              = 43,750 m2
+                                              <br>
+ 
+                                              <br><br><br>
+Example 5: In an auditorium the floor is covered with a rectangular carpet, which is measured 9 m in length and 6 m in width. Calculate the area of the rectangle carpet.
+<br>
+Solution:
+<br>
+Given that, length (L) of carpet =9m and Breadth of a carpet (W) =6m
+<br>
+Area of rectangle = length Breadth
+<br>
+Area = L × W = 9 × 6 = 54 m2
+<br><br><br><br>
+
+<!-- ncb -->
+<h2>Perimeter of Rectangle</h2>
+<br><br><img src="g8.PNG" alt="">
+<br><br>
+In rectangle, the distance around the outside of the rectangle is known as perimeter. A rectangle is 2-dimensional; however, perimeter is 1-dimensional and is measured in linear units such as feet or meter etc.
+<br>
+The perimeter of a rectangle is the total length of all the four sides.
+<br>
+Perimeter of rectangle = 2L + 2W.
+<br>
+<br><br><br>
+Example 1: Rectangle has the length 13 cm and width 8 cm. solve for perimeter of rectangle.
+<br>
+Solution:
+<br>
+Given that:
+<br>
+Length (l) = 13 cm
+<br>
+Width (w) = 8 cm
+<br>
+
+Perimeter of the rectangle = 2(l + w) units
+<br>
+P = 2(13 + 8)
+<br>
+P = 2 (21)
+<br>
+P = 42
+<br>
+
+Thus, the perimeter of the rectangle is 42 cm.
+<br><br><br><br>
+Example 2: If a rectangle's length is 2x + 1 and its width is 2x – 1. If its area is 15 cm2, what are the rectangle's dimensions and what is its perimeter?
+<br>
+
+Solution:
+<br>
+We know that the dimensions of the rectangle in terms of x:
+<br>
+ l = 2x + 1
+ <br>
+w = 2x – 1
+<br>
+
+Since the area of a rectangle is given by:
+<br>
+A = l * w
+<br>
+
+We can substitute the expressions for length and width into the equation for area in order to determine the value of x.
+<br>
+A = l * w
+
+15 = (2x + 1) (2x -1)
+<br>
+15 = 4x2 – 1
+<br>
+16 = 4x2
+<br>
+x = ±2
+<br>
+ 
+ Note that the value of x must be positive and therefore in our case, the value of x is 2. And now we have:
+ <br>
+l = 5 cm
+<br>
+w = 3 cm
+<br>
+Therefore, the dimensions are 5cm and 3cm.
+<br>
+
+Now, substituting these values in the formula for perimeter, we will get
+<br>
+P = 2l + 2w
+<br>
+P = 2(5)+2(3)
+<br>
+P = 10+6
+<br>
+P = 16 cm
+<br>
+
+<br><br><br>
+Example 3: Find the area and the perimeter of a rectangle whose length is 24 m and width is 12m?
+<br>
+Solution:
+<br>
+Given that:
+<br>
+length = L = 24m
+<br>
+width = W = 12m
+<br>
+
+Area of a rectangle:
+<br>
+A = L × W
+<br>
+A = 24 × 12
+<br>
+A = 188 m2
+<br>
+<br><br><br>
+Perimeter of a rectangle:
+<br><br>
+P = 2L + 2W
+<br>
+P = 2(24) + 2(12)
+<br>
+P = 48 + 24
+<br>
+
+P = 72 m
+<br>
+
+<br><br><br>
+Example 4: Find the area and perimeter of a rectangle whose breadth is 4 cm and the height 3 cm.
+<br>
+Solution:
+<br>
+Area = b×h = 4×3 = 12 cm2.
+
+<br>
+Perimeter = 2(b) + 2(h) = 2(4) + 2(3) = 8 + 6 = 14.
+
+<br>
+<br><br><br>
+Example 5: Calculate the perimeter of the rectangle whose length is 18cm and breadth 7cm
+<br>
+Solution:
+<br>
+Given that:
+<br>
+L = 18 cm
+<br>
+B = 7 cm
+<br>
+
+Perimeter of rectangle = 2(length + breadth)
+<br>
+P = 2 (L + B)
+<br>
+P = 2 (18 + 7)
+<br>
+P = 50 cm
+<br>
+
+<br><br><br>
+Example 6: Find the perimeter of rectangle whose length is 6 inches and width is 4 inches.
+<br>
+Solution:
+<br>
+P = 2(L + B)
+<br>
+P = 2(6 + 4)
+<br>
+P = 20 in
+<br>
+
+<br><br><br>
+Example 7: A boy walks 5 times around a park. If the size of the park is 100m by 50m, find the distance the boy has walked. If he walks 100m in 5 minutes, how long will it take for him in total?
+<br>
+Solution:
+<br>
+Given that:
+<br>
+Length = L = 100m
+<br>
+Width = W = 50m
+<br>
+Rounds = 5
+<br>
+Time per 100m = 5minutes.
+<br>
+
+Perimeter of the park:
+<br>
+P = 2 L + 2 W.
+<br>
+P = 2 × 100 + 2 × 50
+<br>
+P = 200 + 100
+<br>
+P = 300 m
+<br>
+
+Total distance walked = 5 × Perimeter of the park.
+<br>
+= 5 × 300
+<br>
+= 1500 meters
+<br>
+
+Total time taken = Total distance walked × time taken to walk 1m.
+<br>
+= 1500 × 5/100
+<br>
+= 75minutes or 1hr 15minutes
+<br>
+<br><br>
+    </div>
+    
+</body>
+</html>

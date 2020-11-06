@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>triangle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+
+  color: #000000;
+  }
+  .navbar {
+    position:fixed;
+    display: flex;
+    top:0%;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(57, 177, 247);
+    z-index: 2000;
+    margin-bottom: 0px;
+  }
+
+  .navbar a {
+      margin: auto;
+    float: left;
+    font-size: 222%;
+    /* font-size: 150%; */
+    color: white;
+    text-align: center;
+    padding: 1% 1% 1% 5%;
+    margin-left: 6%;
+    font-style: italic;
+  }
+  .search-container{
+      display: flex;
+    float: left;
+    color: white;
+    text-align: center;
+      margin: auto;
+    text-decoration: none;
+
+  }
+  .search-button{
+      margin-top: 10px;
+      margin-left: 10px;
+      cursor: pointer;
+       padding: 10px;
+      border-radius: 10px;
+  }
+  .search-box{
+        padding:20px;
+      margin-left: 0px;
+        border-radius: 10px;
+      font-size: 15px;
+  }
+  .log{
+      margin: auto;
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 1.5% 2% 1% 1%;
+    text-decoration: none;
+
+  }
+  .lb{
+        color:blue;
+        
+        font-size: 150%;
+        padding:2% 5% 2% 2%;
+        font-family: serif;
+        cursor: pointer;
+        border: 2px solid paleturquoise;
+        border-radius: 5.5px;
+      }
+  .cart{
+    float: left;
+    padding:20px;
+    font-size: 100%;
+    cursor: pointer;
+
+  }
+  .cart img{
+      float: left;
+
+    width:20%;
+    height: 20%;
+    border-radius: 50%;
+  }
+  
+  body #div1{
+    margin-left: 10px;
+    /* font-size: 3rem; */
+    /* font-family: 'Courier New', Courier, monospace; */
+  }
+  .navbar2 {
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(253, 253, 255);
+    z-index: 2000;
+      /*position:fixed;  
+ top:1%;*/
+  }
+
+  a{
+      list-style-type: none;
+      text-decoration: none;
+}
+  .navbar2 a {
+    /* text-decoration: underline; */
+    float: left;
+    font-size: 200%;
+    color: rgb(20, 20, 20);
+    text-align: center;
+    padding: 1% 2% 1% 0%;
+    margin-left: 2%;
+    margin-top:6%;
+    font-style: italic;
+    color:rgb(245, 106, 106);
+    text-decoration: underline;
+    
+}
+a {
+    list-style-type: none;
+    text-decoration: none;
+  }
+  .navbar2 a:active{
+    
+    cursor: pointer;
+    color: #3916ff;
+  } 
+  
+  
+  
+  
+    </style>
+</head>
+<body>
+    
+  <header class="home" id="home">
+    <div class="dis">
+      <div class="navbar">
+        <a href="../css3.html">Maths Formula</a>
+        <div class="search-container">
+          <input type="text" placeholder="Search for Topics,Chapters..." name="search" class="search-box" size="40">
+          <div> <button type="submit" class="search-button"><i class="fa fa-search" style="color: blue;"></i></button>
+          </div>
+        </div>
+        <div class="log">
+          <button class="lb">Login</button>
+        </div>
+        <div class="cart">
+          <!--<div><img src="images/Logo.png" alt=""></div>-->
+          <div>
+            <a href="../Calculator/index.html" target="_blank" style="color: #ffffff;font-family: Arial, Helvetica, sans-serif; margin-left: 3px; margin-top: 5px;">
+              Calculator</a>
+          </div>
+
+        </div>
+      </div>
+      <div class="navbar2">
+        <a href="../algebra/algebraa.html" target="_blank">Algebra</a>
+        <a href="../gmtry/geometry.html" target="_blank">Geometry</a>
+        <a href="../matrices/matrix.html" target="_blank">Matrices</a>
+        <a href="../trigo/trigonometry.html" target="_blank">Trigonometry</a>
+        <a href="../calclus/calculus.html" target="_blank">Calculus</a>
+        <a href="../complex/complex_no.html" target="_blank">Complex Numbers</a>
+        <a href="../css3.html" target="_blank">Home</a>
+      </div>
+      
+    <div id="div1"><br>
+        <br><br><br><br><br><h1>Triangle</h1><br><br><br>
+        <h2>Area of Triangle</h2><br><br><img src="g6.PNG" alt="">
+        <br><br>
+    A triangle is a polygon which has three sides and can be categorized into the follow types:
+    <br><br>
+    ·         An equilateral triangle has equal sides and equal angles.
+    <br><br>
+    ·         An isosceles triangle has two equal sides and two equal angles.
+    <br><br>
+    ·         A scalene triangle has three unequal sides and three unequal angles.
+    <br><br>
+    ·         A right-angled triangle has one right angle (90°).
+    <br><br>
+    ·         An acute-angled triangle has all angles less than 90°.
+    <br><br>
+    ·         An obtuse-angled triangle has one angle greater than 90°.
+    <br><br>
+    
+    
+    
+    The perimeter of a triangle = Sum of three sides
+    <br><br>
+    In the figure alongside of the ΔABC, the perimeter is the sum of AB + BC + AC.
+    <br><br>
+     
+    
+    Area of a triangle is given by:
+    <br><br>
+    A = ½ × Base × Height
+    <br><br>
+    
+    Any side of the triangle may be considered as its base.
+    <br><br>
+    
+    Then, the length of the perpendicular line from the opposite vertex is taken as the corresponding height or altitude.
+    <br><br>
+    In the figure shown above the area is thus given as: ½ × AC × BD.
+    <br><br>
+     
+    
+    Additional formulas for determining the area of a triangle:
+    <br><br>
+    Area of a triangle = √(s(s-a)(s-b)(s-c)) by Heron's Formula (or Hero's Formula), where a, b and c are the lengths of the sides of the triangle, and s = ½ (a + b + c) is the semi-perimeter of the triangle.
+    <br><br>
+     
+    
+    Area of an equilateral triangle
+    <br><br>
+    A= √(3) · ¼ · side, where side = a = b = c
+    <br><br>
+     
+    
+    Area of an isosceles triangle
+    <br><br>
+    A = ¼ ·b · √(4a<span style="vertical-align: super">2</span> – b<span style="vertical-align: super">2</span>)
+    <br><br>
+     
+    
+    Area of the right angled triangle
+    <br><br>
+    A= ½× Product of the sides containing the right angle.
+    <br><br>
+     
+    
+    If two sides and the angle between them are given then the area of the triangle can be determined using the following formula:
+    <br><br>
+    Area = ½ · a · b · sinC = ½ · b · c · sinA = ½ · a · c · sin B
+    <br><br>
+     
+    
+     
+    <br>
+    Example 1: Find the area of a triangle whose base is 14 cm and height is 10 cm.
+    <br>
+    Solution:
+    <br>
+    b = 14 cm
+    <br>
+    h = 10 cm
+    <br>
+    A = ½ · 14 · 10 = 70 cm<span style="vertical-align: super">2<span>
+    <br><br>
+     
+    
+     
+    <br><br>
+    Example 2: Find the area of a triangle whose sides and the angle between them are given as following:
+    <br>
+    a = 5cm and b = 7cm
+    <br>
+    C = 45o
+    <br>
+    Solution:
+    <br>
+    Area of a triangle = ½ · a · b · sinC
+    <br>
+    Area = ½ × 5 ×7 × 0.707 (since sin 45 ° = 0.707)
+    <br>
+    Area = ½ × 24.745 = 12.3725 m<span style="vertical-align: super">2<span>
+    <br><br>
+     
+    
+     
+    <br><br>
+    Example 3: Find the area (in m2) of an isosceles triangle, whose sides are 10 m and the base is12 m.
+    <br>
+    Solution:
+    <br>
+    The area of an isosceles triangle is determined by:
+    <br>
+     
+    
+    A = ¼ ·b · √(4a<span style="vertical-align: super">2</span> – b<span style="vertical-align: super">2</span>)
+    <br>
+    A = ¼ ·12 · √(4(10)<span style="vertical-align: super">2</span> – (12)<span style="vertical-align: super">2</span>)
+    <br>
+    A = 48 m<span style="vertical-align: super">2<span>
+    <br><br>
+     
+    
+     
+    
+     
+    <br><br>
+    Example 4: Find the area of a triangle whose sides are 8, 9 and 11 respectively. All units are measured in meter (m).
+    <br>
+    Solution:
+    <br>
+    Given: sides a = 8, b = 9 and c = 11
+    <br>
+    According to Heron’s Formula the area of a triangle can be determined using the following formula:
+    <br>
+    A = √(s(s-a)(s-b)(s-c))
+    <br>
+     
+    
+    First of all, we need to determine the s, which is the semi-perimeter of the triangle:
+    <br>
+    s = ½ (a + b + c) = ½ (8 + 9 + 11) = 14
+    <br>
+     
+    
+    Now by inserting the value of the semi-perimeter into the Heron’s formula we can determine the area of the triangle:
+    <br>
+     
+    
+    A = √(s · (s-a) · (s-b) · (s-c))
+    <br>
+    A = √(14 · (14-8) · (14-9) · (14-11))
+    <br>
+    A = √(1260 ) = 35.50 m<span style="vertical-align: super">2<span>
+    <br>
+     
+    
+     
+    <br>
+    Example 5: Farmer Munnabhai owns a triangular piece of land. The length of the fence AB is 150 m. The length of the fence BC is 231 m. The angle between fence AB and fence BC is 123º.
+    
+    How much land does Farmer Munnabhai own?
+    <br>
+    Solution: First of all we must decide which lengths and angles we know:
+    <br>
+    
+    
+    
+    AB = c = 150 m
+    <br>
+    BC = a = 231 m
+    <br>
+    and angle B = 123º
+    <br>
+     
+    
+    To determine the area of the land, we can use the following formula:
+    <br>
+    
+     
+    
+    Area = ½ · c · a · sin B
+    <br><br>
+    Area = ½ ×150 × 231 × sin(123º )
+    <br><br>
+    Area = 17,325 ×0.8386
+    <br><br>
+    Area = 14,529 m<span style="vertical-align: super">2<span>
+    <br><br>
+     
+    
+    Therefore, farmer Munnabhai has 14,529 m<span style="vertical-align: super">2</span> of land.
+    <br><br>
+
+    <br><br>
+</div>
+
+</body>
+</html>
