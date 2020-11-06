@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>polynomials_basics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+
+  color: #000000;
+  }
+  .navbar {
+    position:fixed;
+    display: flex;
+    top:0%;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(57, 177, 247);
+    z-index: 2000;
+    margin-bottom: 0px;
+  }
+
+  .navbar a {
+      margin: auto;
+    float: left;
+    font-size: 222%;
+    /* font-size: 150%; */
+    color: white;
+    text-align: center;
+    padding: 1% 1% 1% 5%;
+    margin-left: 6%;
+    font-style: italic;
+  }
+  .search-container{
+      display: flex;
+    float: left;
+    color: white;
+    text-align: center;
+      margin: auto;
+    text-decoration: none;
+
+  }
+  .search-button{
+      margin-top: 10px;
+      margin-left: 10px;
+      cursor: pointer;
+       padding: 10px;
+      border-radius: 10px;
+  }
+  .search-box{
+        padding:20px;
+      margin-left: 0px;
+        border-radius: 10px;
+      font-size: 15px;
+  }
+  .log{
+      margin: auto;
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 1.5% 2% 1% 1%;
+    text-decoration: none;
+
+  }
+  .lb{
+        color:blue;
+        
+        font-size: 150%;
+        padding:2% 5% 2% 2%;
+        font-family: serif;
+        cursor: pointer;
+        border: 2px solid paleturquoise;
+        border-radius: 5.5px;
+      }
+  .cart{
+    float: left;
+    padding:20px;
+    font-size: 100%;
+    cursor: pointer;
+
+  }
+  .cart img{
+      float: left;
+
+    width:20%;
+    height: 20%;
+    border-radius: 50%;
+  }
+  
+  body #div1{
+    margin-left: 10px;
+    /* font-size: 3rem; */
+    /* font-family: 'Courier New', Courier, monospace; */
+  }
+  .navbar2 {
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(253, 253, 255);
+    z-index: 2000;
+      /*position:fixed;  
+ top:1%;*/
+  }
+
+  a{
+      list-style-type: none;
+      text-decoration: none;
+}
+  .navbar2 a {
+    /* text-decoration: underline; */
+    float: left;
+    font-size: 200%;
+    color: rgb(20, 20, 20);
+    text-align: center;
+    color:rgb(245, 106, 106);
+    text-decoration: underline;
+    padding: 1% 2% 1% 0%;
+    margin-left: 2%;
+    margin-top:6%;
+    font-style: italic;
+    
+}
+a {
+    list-style-type: none;
+    text-decoration: none;
+  }
+  .navbar2 a:active{
+    
+    cursor: pointer;
+    color: #3916ff;
+  } 
+ 
+   
+    </style>
+</head>
+<body>
+    
+  <header class="home" id="home">
+    <div class="dis">
+      <div class="navbar">
+        <a href="../css3.html">Maths Formula</a>
+        <div class="search-container">
+          <input type="text" placeholder="Search for Topics,Chapters..." name="search" class="search-box" size="40">
+          <div> <button type="submit" class="search-button"><i class="fa fa-search" style="color: blue;"></i></button>
+          </div>
+        </div>
+        <div class="log">
+          <button class="lb">Login</button>
+        </div>
+        <div class="cart">
+          <!--<div><img src="images/Logo.png" alt=""></div>-->
+          <div>
+            <a href="../Calculator/index.html" target="_blank" style="color: #ffffff;font-family: Arial, Helvetica, sans-serif; margin-left: 3px; margin-top: 5px;">
+              Calculator</a>
+          </div>
+
+        </div>
+      </div>
+      <div class="navbar2">
+        <a href="../algebra/algebraa.html" target="_blank">Algebra</a>
+        <a href="../gmtry/geometry.html" target="_blank">Geometry</a>
+        <a href="../matrices/matrix.html" target="_blank">Matrices</a>
+        <a href="../trigo/trigonometry.html" target="_blank">Trigonometry</a>
+        <a href="../calclus/calculus.html" target="_blank">Calculus</a>
+        <a href="../complex/complex_no.html" target="_blank">Complex Numbers</a>
+        <a href="../css3.html" target="_blank">Home</a>
+      </div>
+      <div id="div1">
+          <br><br><br><br><br>
+    <h1>Algebraic Identities</h1><br>
+<br>
+(a + b)(a - b) = a<span style="vertical-align: super">2</span> - b<span style="vertical-align: super">2</span>
+
+(a + b)<span style="vertical-align: super">2</span> = a<span style="vertical-align: super">2</span> + b<span style="vertical-align: super">2</span>+ 2ac<br>
+
+(a - b)<span style="vertical-align: super">2</span> = a<span style="vertical-align: super">2</span> + b<span style="vertical-align: super">2</span> - 2ac<br>
+
+(a + b)<span style="vertical-align: super">3</span> = a<span style="vertical-align: super">3</span> + b<span style="vertical-align: super">3</span>+ 3a<span style="vertical-align: super">2</span>b + 3ab<span style="vertical-align: super">2</span><br>
+
+(a - b)<span style="vertical-align: super">3</span> = a<span style="vertical-align: super">3</span> - b<span style="vertical-align: super">3</span>- 3a<span style="vertical-align: super">2</span>b + 3ab<span style="vertical-align: super">2</span><br>
+
+<br><br>
+
+Example 1: Simplify (3u + 5w)(3u – 5w)
+<br><br>
+Using the algebraic identities (a + b)(a - b) = a<span style="vertical-align: super">2</span>-b<span style="vertical-align: super">2</span>, we substitute a for 3u and b for 5w.
+<br><br>
+(3u + 5w)(3u – 5w)<br>
+<br>
+= (3u)<span style="vertical-align: super"></span>2</span> – (5w)<span style="vertical-align: super"></span>2</span><br>
+<br>
+= 9u<span style="vertical-align: super">2</span> – 25w<span style="vertical-align: super">2</span><br>
+<br>
+ 
+
+Thus (3u + 5w)(3u – 5w) =  9u<span style="vertical-align: super">2 </span>– 25w<span style="vertical-align: super">2</span><br>
+<br>
+ 
+<br><br>
+Example 2 : Using the algebraic identities to simplify (3a + 7b)<span style="vertical-align: super">2</span><br>
+<br>
+Using (a+b)<span style="vertical-align: super">2</span> = a<span style="vertical-align: super">2</span>+2ab+b<span style="vertical-align: super">2</span>  <br>
+<br>
+In this case we need to substitute 3a for a as well as 7b for b<br>
+<br>
+
+(3a + 7b)<span style="vertical-align: super">2</span>
+<br><br>
+= (3a)<span style="vertical-align: super">2</span> + 2(3a)(7b) + (7b)<span style="vertical-align: super">2</span><br>
+<br>
+= 9a<span style="vertical-align: super">2</span>+ 42ab + 49b<span style="vertical-align: super">2</span><br>
+<br>
+Thus (3a + 7b)<span style="vertical-align: super">2  </span>= 9a<span style="vertical-align: super">2</span>+ 42ab + 49b<span style="vertical-align: super">2</span><br>
+<br>
+<br>
+<br>
+Example 3: Simplify (5a – 7b)<span style="vertical-align: super">2</span><br>
+<br>
+Using (a-b)<span style="vertical-align: super">2 = a<span style="vertical-align: super">2</span>-2ab+b<span style="vertical-align: super">2</span><br>
+<br>
+(5a – 7b)<span style="vertical-align: super">2</span><br>
+<br>
+= (5a)<span style="vertical-align: super">2</span>– 2(5a) (7b) + (7b)<span style="vertical-align: super">2</span>2<br> 
+<br>
+= 25a<span style="vertical-align: super">2</span> – 70ab + 49b<span style="vertical-align: super">2</span>.<br>
+<br>
+
+Thus (5a – 7b)<span style="vertical-align: super">2</span> = 25a<span style="vertical-align: super">2</span> – 70ab + 49b<span style="vertical-align: super">2</span><br>
+<br>
+<br>
+<br>
+Example 4 : Expand (2x + 1)<span style="vertical-align: super">3</span><br>
+<br>
+Using identity (a + b)<span style="vertical-align: super">3</span> = a<span style="vertical-align: super">3</span> + b<span style="vertical-align: super">3 </span>+ 3a<span style="vertical-align: super">2</span>b + 3ab<span style="vertical-align: super">2</span> we have:<br>
+<br>
+(2x + 1)<span style="vertical-align: super">3</span><br>
+<br>
+= (2x)<span style="vertical-align: super">3</span> + (1)<span style="vertical-align: super">3</span>+ 3(2x)(1)(2x + 1)<br>
+<br>
+= 8x<span style="vertical-align: super">3</span> + 1 + 6x(2x + 1)<br>
+<br>
+= 8x<span style="vertical-align: super">3</span> + 12x<span style="vertical-align: super">2</span>2 + 6x + 1   <br>    
+<br>
+ 
+<br><br>
+Example 5: Expand (2x - 3y)<span style="vertical-align: super">3</span>.<br>
+<br>
+Using identity (a - b)<span style="vertical-align: super">3</span> = a<span style="vertical-align: super">3</span> - b<span style="vertical-align: super">3</span>- 3a<span style="vertical-align: super">2</span>b + 3ab<span style="vertical-align: super">2</span> we have:<br>
+<br>
+(2x - 3y)<span style="vertical-align: super">3</span><br>
+<br>
+
+= (2x)<span style="vertical-align: super">3</span> - (3y)<span style="vertical-align: super">3</span>- 3(haha2x)(3y)(2x - 3y)<br>
+<br>
+= 8x<span style="vertical-align: super">3</span> - 27y<span style="vertical-align: super">3</span> - 18xy(2x - 3y)<br>
+<br>
+= 8x<span style="vertical-align: super">3</span> - 27y<span style="vertical-align: super">3</span> - 36x<span style="vertical-align: super">2</span>y + 54xy<span style="vertical-align: super">2</span> <br>      
+<br>
+ 
+<br><br>
+Example 6: If the values of a+b and ab are 4 and 1 respectively, find the value of a<span style="vertical-align: super">3</span> + b<span style="vertical-align: super">3</span>.
+<br><br>
+a<span style="vertical-align: super">3</span>+ b<span style="vertical-align: super">3</span><br>
+<br>
+= (a+b)<span style="vertical-align: super">3</span>– 3ab(a+b)<br>
+<br>
+= (4)<span style="vertical-align: super">3</span> – 3(1)(4)<br>
+<br>
+= 64 – 12<br>
+<br>
+= 52<br>
+<br>
+<br>
+<br>
+Example 7: Factorize 27x<span style="vertical-align: super">3</span> + y<span style="vertical-align: super">3</span>+ z<span style="vertical-align: super">3</span>3 - 9xyz<br>
+<br>
+
+27x<span style="vertical-align: super">3</span> + y<span style="vertical-align: super">3</span> + z<span style="vertical-align: super">3</span> - 9xyz<br>
+<br>
+= (3x)<span style="vertical-align: super">3</span> + (y)<span style="vertical-align: super">3</span> + (z)<span style="vertical-align: super">3</span> - 3(3x)(y)(z)<br>
+<br>
+= (3x + y + z){(3x)<span style="vertical-align: super">2</span>+ (y)<span style="vertical-align: super">2</span> + (z)<span style="vertical-align: super">2</span> - (3x)(y) - (y)(z) - (z)(3x)}
+<br>
+ <br>
+ <br>
+Using identity x<span style="vertical-align: super">3</span> + y<span style="vertical-align: super">3</span> + z<span style="vertical-align: super">3</span> - 3xyz = (x + y + z)(x<span style="vertical-align: super">2</span> + y<span style="vertical-align: super">2</span> + z<span style="vertical-align: super">2</span> - xy - yz - zx) =  (3x + y + z)(9x<span style="vertical-align: super">2</span> + y<span style="vertical-align: super">2</span> + z<span style="vertical-align: super">2</span> - 3xy - yz - 3zx)  
+<br><br>
+</div>
+<div id="link">
+ 
+</body>
+</html>
+
+
+<!-- <span style="vertical-align: super">m</span> -->

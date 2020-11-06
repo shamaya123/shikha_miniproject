@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>powers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+
+  color: #000000;
+  }
+  .navbar {
+    position:fixed;
+    display: flex;
+    top:0%;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(57, 177, 247);
+    z-index: 2000;
+    margin-bottom: 0px;
+  }
+
+  .navbar a {
+      margin: auto;
+    float: left;
+    font-size: 222%;
+    /* font-size: 150%; */
+    color: white;
+    text-align: center;
+    padding: 1% 1% 1% 5%;
+    margin-left: 6%;
+    font-style: italic;
+  }
+  .search-container{
+      display: flex;
+    float: left;
+    color: white;
+    text-align: center;
+      margin: auto;
+    text-decoration: none;
+
+  }
+  .search-button{
+      margin-top: 10px;
+      margin-left: 10px;
+      cursor: pointer;
+       padding: 10px;
+      border-radius: 10px;
+  }
+  .search-box{
+        padding:20px;
+      margin-left: 0px;
+        border-radius: 10px;
+      font-size: 15px;
+  }
+  .log{
+      margin: auto;
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 1.5% 2% 1% 1%;
+    text-decoration: none;
+
+  }
+  .lb{
+        color:blue;
+        
+        font-size: 150%;
+        padding:2% 5% 2% 2%;
+        font-family: serif;
+        cursor: pointer;
+        border: 2px solid paleturquoise;
+        border-radius: 5.5px;
+      }
+  .cart{
+    float: left;
+    padding:20px;
+    font-size: 100%;
+    cursor: pointer;
+
+  }
+  .cart img{
+      float: left;
+
+    width:20%;
+    height: 20%;
+    border-radius: 50%;
+  }
+  
+  body #div1{
+    margin-left: 10px;
+    /* font-size: 3rem; */
+    /* font-family: 'Courier New', Courier, monospace; */
+  }
+  .navbar2 {
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(253, 253, 255);
+    z-index: 2000;
+      /*position:fixed;  
+ top:1%;*/
+  }
+
+  a{
+      list-style-type: none;
+      text-decoration: none;
+}
+  .navbar2 a {
+    /* text-decoration: underline; */
+    float: left;
+    font-size: 200%;
+    color: rgb(20, 20, 20);
+    text-align: center;
+    padding: 1% 2% 1% 0%;
+    margin-left: 2%;
+    margin-top:6%;
+    font-style: italic;
+    color:rgb(245, 106, 106);
+    text-decoration: underline;
+    
+}
+a {
+    list-style-type: none;
+    text-decoration: none;
+  }
+  .navbar2 a:active{
+    
+    cursor: pointer;
+    color: #3916ff;
+  } 
+  /*.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}*/
+  
+    </style>
+
+</head>
+<body>
+  
+  <header class="home" id="home">
+    <div class="dis">
+      <div class="navbar">
+        <a href="../css3.html">Maths Formula</a>
+        <div class="search-container">
+          <input type="text" placeholder="Search for Topics,Chapters..." name="search" class="search-box" size="40">
+          <div> <button type="submit" class="search-button"><i class="fa fa-search" style="color: blue;"></i></button>
+          </div>
+        </div>
+        <div class="log">
+          <button class="lb">Login</button>
+        </div>
+        <div class="cart">
+          <!--<div><img src="images/Logo.png" alt=""></div>-->
+          <div>
+            <a href="../Calculator/index.html" target="_blank" style="color: #ffffff;font-family: Arial, Helvetica, sans-serif; margin-left: 3px; margin-top: 5px;">
+              Calculator</a>
+          </div>
+
+        </div>
+      </div>
+      <div class="navbar2">
+        <a href="../algebra/algebraa.html" target="_blank">Algebra</a>
+        <a href="../gmtry/geometry.html" target="_blank">Geometry</a>
+        <a href="../matrices/matrix.html" target="_blank">Matrices</a>
+        <a href="../trigo/trigonometry.html" target="_blank">Trigonometry</a>
+        <a href="../calclus/calculus.html" target="_blank">Calculus</a>
+        <a href="../complex/complex_no.html" target="_blank">Complex Numbers</a>
+        <a href="../css3.html" target="_blank">Home</a>
+      </div>
+  <div id="div1">
+    <br><br><br><br><br>
+    <h1>Formula:-</h1>
+    <br>
+    <br>
+    <!-- <br> -->
+    <!-- <br> -->
+
+   1- a<span style="vertical-align: super">n-m</span> = a<span style="vertical-align: super">n</span>/a<span style="vertical-align: super">m</span>
+    <br>
+    <br>
+   2- a<span style="vertical-align: super">n+m</span>= a<span style="vertical-align: super">n</span> ∙ a<span style="vertical-align: super">m</span>
+    <br><br>
+   3- a<span style="vertical-align: super">-n</span> = 1/a<span style="vertical-align: super">n</span>
+    <br><br>
+   4- a<span style="vertical-align: super">nm</span> = a<span style="vertical-align: super"></span>na<span style="vertical-align: super">m</span> = (a<span style="vertical-align: super"></span>n)<span style="vertical-align: super">m</span> = (a<span style="vertical-align: super">m</span>)<span style="vertical-align: super">n</span>
+    <br><br>
+5- a <span style="vertical-align: super">n</span>  b<span style="vertical-align: super">n</span>=(ab)<span style="vertical-align: super">n</span>  
+    <br><br>
+   6- <span style="vertical-align: super">n</span>√a = a<span style="vertical-align: super">(1/n)</span>
+    <!-- <br>                           <span style="vertical-align: super">n-m</span> -->
+    <br><br>
+   7- <span style="vertical-align: super">n</span> √(a b)= <span style="vertical-align: super">n</span>√a ∙ <span style="vertical-align: super">n</span>√b
+    <br>
+    <br>
+   8- <span style="vertical-align: super">n</span>√(a/b) = ( <span style="vertical-align: super">n</span>√a) / ( <span style="vertical-align: super">n</span>√b)
+    <br><br>
+   9- <span style="vertical-align: super">n</span>√(a<span style="vertical-align: super">m</span>) = (a<span style="vertical-align: super">m</span>)<span style="vertical-align: super">(1/n)</span> = a<span style="vertical-align: super">(m/n)</span> = (<span style="vertical-align: super">n</span>√a)<span style="vertical-align: super">m</span>
+    <br><br>
+  10-  (a/b)<span style="vertical-align: super">n</span> = a<span style="vertical-align: super">n</span> / b<span style="vertical-align: super">n</span>
+    <br><br>
+   11- a<span style="vertical-align: super">0</span> = 1
+    <br><br>
+   12- a<span style="vertical-align: super">1</span> = a
+    <br><br><br><br><br><br>
+    Example 1:
+    <br><br>
+    2<span style="vertical-align: super">4</span>/2<span style="vertical-align: super">2</span> = (2*2*2*2 ) / (2*2) = 2<span style="vertical-align: super">4</span><span style="vertical-align: super">-</span><span style="vertical-align: super">2</span> = 2<span style="vertical-align: super">2</span>
+    <br>
+    <br>
+    <br>
+    Example 2:
+    <br><br>
+    2<span style="vertical-align: super">3</span>2<span style="vertical-align: super">4</span> = 2<span style="vertical-align: super">3</span><span style="vertical-align: super">+</span><span style="vertical-align: super">4</span> = 2<span style="vertical-align: super">7</span>
+    <br>
+    <br>
+    <br>
+    Example 3:
+    <br><br>
+    2<span style="vertical-align: super">4</span>3<span style="vertical-align: super">4</span>= (2*3)<span style="vertical-align: super">4</span> = 6<span style="vertical-align: super">4</span>
+    
+    <br><br>
+    <br>
+    Example 4:
+    <br><br>
+    [3/2]<span style="vertical-align: super">4</span> = 3<span style="vertical-align: super"></span>4</span> / 2<span style="vertical-align: super"></span>4</span>
+    <br>
+     
+    <br><br><br>
+    Example 5:
+    <br><br>
+    3<span style="vertical-align: super">-2</span> = 1 / 3<span style="vertical-align: super">2</span>
+    
+    <br>
+    <br><br>
+    Example 6:
+    <br><br>
+    (3<span style="vertical-align: super">2</span>)<span style="vertical-align: super">4</span> = 3<span style="vertical-align: super">(2*4)</span>=3 <span style="vertical-align: super">8</span>
+    
+    <br><br>
+    Exponential Powers Grow Expressions Rapidly
+    <br><br>
+    Exponential powers increase the value of an expression at an incredibly large rate. In order to see this, consider the following example:
+    <br><br>
+    2<span style="vertical-align: super">1</span> = 2<br>
+    <br>
+    2<span style="vertical-align: super">2</span> = 4<br>
+    <br>
+
+    2<span style="vertical-align: super">3</span> = 8<br>
+    
+    <br>
+    2<span style="vertical-align: super">4</span> = 16<br>
+    <br>
+    2<span style="vertical-align: super">5</span> = 32<br>
+    <br>
+    2<span style="vertical-align: super">6</span> = 64<br>
+    <br>
+    2<span style="vertical-align: super">7</span> = 128<br>
+    <br>
+    2<span style="vertical-align: super">8</span> = 256<br>
+    <br>
+    2<span style="vertical-align: super">9</span> = 512<br>
+    <br>
+    
+     
+    <br>
+    In each instance, the value is doubling, which makes sense since it is being multiplied by 2 another time for each increase in the value of the exponent.
+    <br><br><br>
+     
+    <!-- <span style="vertical-align: super"></span> -->
+    Example 7:
+    <br><br>
+    A carpenter cuts a wooden box randomly. He finds that one of the pieces cut was square in shape and its side measure was 115 of a meter. Find the area of the square.
+    <br><br>
+    
+    Area of a square = side x side = s<span style="vertical-align: super">2</span>
+    <br><br>
+    Substitute in place of s, (s= 115)
+    <br><br>
+    Area of a square = 1225
+    <br><br>
+    The area of the square is 1225m<span style="vertical-align: super">2</span>
+    <br>
+     
+    <br><br>
+    Example 8:
+    <br><br>
+    Find the value of m that makes the expression (5j<span style="vertical-align: super">m</span>)<span style="vertical-align: super">3</span>3 = 125j<span style="vertical-align: super">9</span> valid.
+    <br><br>
+    
+    125j<span style="vertical-align: super">9</span> can be written as (5j<span style="vertical-align: super">3</span> x 5j<span style="vertical-align: super">3</span>x 5j<span style="vertical-align: super">3</span>), which is the same as (5j<span style="vertical-align: super">3</span> x 5j<span style="vertical-align: super">3</span>3 x 5j<span style="vertical-align: super"></span>3) = (5j<span style="vertical-align: super">3</span>)<span style="vertical-align: super">3</span>.
+    <br><br>
+     So, the value of m in the expression (5j<span style="vertical-align: super">m</span>)<span style="vertical-align: super">3</span> is 3.
+     <br><br>
+     </div>
+<br>
+ <div class="iframe-container" style="margin-left: 20%; margin-bottom: 2%;">
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/Eu-NsCbFKIc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  
+ 
+</body>
+</html>
