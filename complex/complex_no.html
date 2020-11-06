@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complex_no</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style> *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html{
+    
+      color: #000000;
+      }
+      .navbar {
+        position:fixed;
+        display: flex;
+        top:0%;
+        width: 100%;
+        overflow: hidden;
+        background-color: rgb(57, 177, 247);
+        z-index: 2000;
+        margin-bottom: 0px;
+      }
+    
+      .navbar a {
+          margin: auto;
+        float: left;
+        font-size: 222%;
+        /* font-size: 150%; */
+        color: white;
+        text-align: center;
+        padding: 1% 1% 1% 5%;
+        margin-left: 6%;
+        font-style: italic;
+      }
+      .search-container{
+          display: flex;
+        float: left;
+        color: white;
+        text-align: center;
+          margin: auto;
+        text-decoration: none;
+    
+      }
+      .search-button{
+          margin-top: 10px;
+          margin-left: 10px;
+          cursor: pointer;
+           padding: 10px;
+          border-radius: 10px;
+      }
+      .search-box{
+            padding:20px;
+          margin-left: 0px;
+            border-radius: 10px;
+          font-size: 15px;
+      }
+      .log{
+          margin: auto;
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 1.5% 2% 1% 1%;
+        text-decoration: none;
+    
+      }
+      .lb{
+        color:blue;
+        
+        font-size: 150%;
+        padding:2% 5% 2% 2%;
+        font-family: serif;
+        cursor: pointer;
+        border: 2px solid paleturquoise;
+        border-radius: 5.5px;
+      }
+      .cart{
+        float: left;
+        padding:20px;
+        font-size: 100%;
+        cursor: pointer;
+    
+      }
+      .cart img{
+          float: left;
+    
+        width:20%;
+        height: 20%;
+        border-radius: 50%;
+      }
+      
+      body #div1{
+        margin-left: 10px;
+        /* font-size: 2rem; */
+        /* font-family: 'Courier New', Courier, monospace; */
+      }
+      #topic{
+        margin: 1% 1% 1% 1%;
+    padding: 1% 1% 1% 1%;
+    font-size: 2rem;
+      }
+      #topic #p1{
+        padding: 1% 1% 1% 1%;
+        display:block;
+        text-decoration: underline;
+      }
+      
+      #topic #p2{
+        padding: 1% 1% 1% 1%;
+        display:block;
+        text-decoration: underline;
+      }
+      #topic #p3{
+        padding: 1% 1% 1% 1%;
+        display:block;
+        text-decoration: underline;
+}
+#topic #p4{
+    padding: 1% 1% 1% 1%;
+        display:block;
+        text-decoration: underline;
+}
+#topic #p5{
+    padding: 1% 1% 1% 1%;
+        display:block;
+        text-decoration: underline;
+}
+.navbar2 {
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(253, 253, 255);
+    z-index: 2000;
+      /*position:fixed;  
+ top:1%;*/
+  }
+
+  a{
+      list-style-type: none;
+      text-decoration: none;
+}
+  .navbar2 a {
+    /* text-decoration: underline; */
+    float: left;
+    font-size: 200%;
+    color: rgb(20, 20, 20);
+    text-align: center;
+    padding: 1% 2% 1% 0%;
+    margin-left: 2%;
+    margin-top:6%;
+    color:rgb(245, 106, 106);
+    text-decoration: underline;
+    font-style: italic;
+    
+}
+a {
+    list-style-type: none;
+    text-decoration: none;
+  }
+  .navbar2 a:active{
+    
+    cursor: pointer;
+    color: #3916ff;
+  } 
+  
+
+   
+        </style>
+</head>
+<body>
+    <header class="home" id="home">
+        <div class="dis">
+          <div class="navbar">
+            <a href="../css3.html">Maths Formula</a>
+            <div class="search-container">
+              <input type="text" placeholder="Search for Topics,Chapters..." name="search" class="search-box" size="40">
+              <div> <button type="submit" class="search-button"><i class="fa fa-search" style="color: blue;"></i></button>
+              </div>
+            </div>
+            <div class="log">
+              <button class="lb">Login</button>
+            </div>
+            <div class="cart">
+              <!--<div><img src="images/Logo.png" alt=""></div>-->
+              <div>
+                <a href="../Calculator/index.html" target="_blank" style="color: #ffffff;font-family: Arial, Helvetica, sans-serif; margin-left: 3px; margin-top: 5px;">
+                  Calculator</a>
+              </div>
+    
+            </div>
+          </div>
+          <div class="navbar2">
+            <a href="../algebra/algebraa.html" target="_blank">Algebra</a>
+            <a href="../gmtry/geometry.html" target="_blank">Geometry</a>
+            <a href="../matrices/matrix.html" target="_blank">Matrices</a>
+            <a href="../trigo/trigonometry.html" target="_blank">Trigonometry</a>
+            <a href="../calclus/calculus.html" target="_blank">Calculus</a>
+            <a href="../complex/complex_no.html" target="_blank">Complex Numbers</a>
+            <a href="../css3.html" target="_blank">Home</a>
+          </div>
+          
+          <div id="div1"><br><br><br><br><br>
+              <h1>
+                  Tigonometric
+              </h1><br><br>
+            <h2>Introduction</h2><br><br>
+            A complex number is a number comprising a real and imaginary part. It can be written in the form a + bi, where a and b are real numbers, and i is the standard imaginary unit with the property i 2  = −1.[1]  The complex numbers contain the ordinary real numbers, but extend them by adding in extra numbers and correspondingly expanding the understanding of addition and multiplication.
+
+
+            <br><br><br><br>
+            <h2>
+                Formulas:-
+            </h2><br>
+            <div id="topic">
+                <a href="equality.html" target="_blank" id="p1">Equality</a>
+                      <a href="operations.html" target="_blank" id="p2">Operations</a>
+                      <a href="De-Moivre's_Theorem.html" target="_blank" id="p3">De-Moivre's Theorem</a>
+                      <!-- <a href="Fashion/Index.html" target="_blank" id="p4">Trigonometric Functions</a> -->
+                      <!-- <a href="Fashion/Index.html" target="_blank" id="p5">Shifts And Periodicity</a> -->
+                      <!-- <a href="Fashion/Index.html" target="_blank" id="p6"></a> -->
+                      <!-- <a href="Fashion/Index.html" target="_blank" id="l7">Home</a> -->
+                    </div>
+                    <div id="link">
+                        
+          </div>
+    
+</body>
+</html>

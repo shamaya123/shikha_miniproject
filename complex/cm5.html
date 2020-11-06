@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>    *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html{
+    
+      color: #000000;
+      }
+      .navbar {
+        position:fixed;
+        display: flex;
+        top:0%;
+        width: 100%;
+        overflow: hidden;
+        background-color: rgb(57, 177, 247);
+        z-index: 2000;
+        margin-bottom: 0px;
+      }
+    
+      .navbar a {
+          margin: auto;
+        float: left;
+        font-size: 222%;
+        /* font-size: 150%; */
+        color: white;
+        text-align: center;
+        padding: 1% 1% 1% 5%;
+        margin-left: 6%;
+        font-style: italic;
+      }
+      .search-container{
+          display: flex;
+        float: left;
+        color: white;
+        text-align: center;
+          margin: auto;
+        text-decoration: none;
+    
+      }
+      .search-button{
+          margin-top: 10px;
+          margin-left: 10px;
+          cursor: pointer;
+           padding: 10px;
+          border-radius: 10px;
+      }
+      .search-box{
+            padding:20px;
+          margin-left: 0px;
+            border-radius: 10px;
+          font-size: 15px;
+      }
+      .log{
+          margin: auto;
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 1.5% 2% 1% 1%;
+        text-decoration: none;
+    
+      }
+      .lb{
+        color:blue;
+        padding: 2% 15% 2% 15%;
+        font-size: 150%;
+        font-family: serif;
+        cursor: pointer;
+        /* border: 2px solid black; */
+        border: 2px solid paleturquoise;
+        /* border: 2px solid lightgreen; */
+        border-radius: 8px;
+      }
+      .cart{
+        float: left;
+        padding:20px;
+        font-size: 100%;
+        cursor: pointer;
+    
+      }
+      .cart img{
+          float: left;
+    
+        width:20%;
+        height: 20%;
+        border-radius: 50%;
+      }
+      
+      body #div1{
+        margin-left: 10px;
+        /* font-size: 3rem; */
+        /* font-family: 'Courier New', Courier, monospace; */
+      }
+        </style>
+</head>
+<body>
+       
+  <header class="home" id="home">
+    <div class="dis">
+      <div class="navbar">
+        <a href="../css3.html">Maths Formula</a>
+        <div class="search-container">
+          <input type="text" placeholder="Search for Topics,Chapters..." name="search" class="search-box" size="40">
+          <div> <button type="submit" class="search-button"><i class="fa fa-search" style="color: blue;"></i></button>
+          </div>
+        </div>
+        <div class="log">
+          <button class="lb">Login</button>
+        </div>
+        <div class="cart">
+          <!--<div><img src="images/Logo.png" alt=""></div>-->
+          <div>
+            <a href="../Calculator/index.html" target="_blank" style="color: #ffffff;font-family: Arial, Helvetica, sans-serif; margin-left: 3px; margin-top: 5px;">
+              Calculator</a>
+          </div>
+
+        </div>
+      </div>
+      <div id="div1">
+          <br><br><br><br><br><br><br><br><br>
+          
+    
+</body>
+</html>

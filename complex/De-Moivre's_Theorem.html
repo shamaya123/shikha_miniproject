@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>de-moivre's_theorem</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">s
+    <style>
+            *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+
+  color: #000000;
+  }
+  .navbar {
+    position:fixed;
+    display: flex;
+    top:0%;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(57, 177, 247);
+    z-index: 2000;
+    margin-bottom: 0px;
+  }
+
+  .navbar a {
+      margin: auto;
+    float: left;
+    font-size: 222%;
+    /* font-size: 150%; */
+    color: white;
+    text-align: center;
+    padding: 1% 1% 1% 5%;
+    margin-left: 6%;
+    font-style: italic;
+  }
+  .search-container{
+      display: flex;
+    float: left;
+    color: white;
+    text-align: center;
+      margin: auto;
+    text-decoration: none;
+
+  }
+  .search-button{
+      margin-top: 10px;
+      margin-left: 10px;
+      cursor: pointer;
+       padding: 10px;
+      border-radius: 10px;
+  }
+  .search-box{
+        padding:20px;
+      margin-left: 0px;
+        border-radius: 10px;
+      font-size: 15px;
+  }
+  .log{
+      margin: auto;
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 1.5% 2% 1% 1%;
+    text-decoration: none;
+
+  }
+  .lb{
+        color:blue;
+        
+        font-size: 150%;
+        padding:2% 5% 2% 2%;
+        font-family: serif;
+        cursor: pointer;
+        border: 2px solid paleturquoise;
+        border-radius: 5.5px;
+      }
+  .cart{
+    float: left;
+    padding:20px;
+    font-size: 100%;
+    cursor: pointer;
+
+  }
+  .cart img{
+      float: left;
+
+    width:20%;
+    height: 20%;
+    border-radius: 50%;
+  }
+  
+  body #div1{
+    margin-left: 10px;
+    /* font-size: 3rem; */
+    /* font-family: 'Courier New', Courier, monospace; */
+  }
+  .navbar2 {
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(253, 253, 255);
+    z-index: 2000;
+      /*position:fixed;  
+ top:1%;*/
+  }
+
+  a{
+      list-style-type: none;
+      text-decoration: none;
+}
+  .navbar2 a {
+    /* text-decoration: underline; */
+    float: left;
+    font-size: 200%;
+    color: rgb(20, 20, 20);
+    text-align: center;
+    padding: 1% 2% 1% 0%;
+    margin-left: 2%;
+    margin-top:6%;
+    font-style: italic;
+    color:rgb(245, 106, 106);
+    text-decoration: underline;
+    
+}
+a {
+    list-style-type: none;
+    text-decoration: none;
+  }
+  .navbar2 a:active{
+    
+    cursor: pointer;
+    color: #3916ff;
+  } 
+  
+    
+    </style>
+</head>
+<body>
+       
+  <header class="home" id="home">
+    <div class="dis">
+      <div class="navbar">
+        <a href="../css3.html">Maths Formula</a>
+        <div class="search-container">
+          <input type="text" placeholder="Search for Topics,Chapters..." name="search" class="search-box" size="40">
+          <div> <button type="submit" class="search-button"><i class="fa fa-search" style="color: blue;"></i></button>
+          </div>
+        </div>
+        <div class="log">
+          <button class="lb">Login</button>
+        </div>
+        <div class="cart">
+          <!--<div><img src="images/Logo.png" alt=""></div>-->
+          <div>
+            <a href="../Calculator/index.html" target="_blank" style="color: #ffffff;font-family: Arial, Helvetica, sans-serif; margin-left: 3px; margin-top: 5px;">
+              Calculator</a>
+          </div>
+
+        </div>
+      </div>
+      <div class="navbar2">
+        <a href="../algebra/algebraa.html" target="_blank">Algebra</a>
+        <a href="../gmtry/geometry.html" target="_blank">Geometry</a>
+        <a href="../matrices/matrix.html" target="_blank">Matrices</a>
+        <a href="../trigo/trigonometry.html" target="_blank">Trigonometry</a>
+        <a href="../calclus/calculus.html" target="_blank">Calculus</a>
+        <a href="../complex/complex_no.html" target="_blank">Complex Numbers</a>
+        <a href="../css3.html" target="_blank">Home</a>
+      </div>
+      
+      <div id="div1">
+          <br><br><br><br><br>
+          <h1>
+            De-Moivre's Theorem
+          </h1><br><br><span style="vertical-align: super">
+ </span>         A complex number is made up of both real and imaginary components. It can be represented by an expression of the form (a+bi), where a and b are real numbers and i is imaginary. When defining i we say that i = √(-1). Along with being able to be represented as a point (a,b) on a graph, a complex number z = a+bi can also be represented in polar form as written below:
+          <br><br>
+
+z = r (cos θ + i sinθ)<br><br>
+where r = [z] = √(a<span style="vertical-align: super">2 </span>+ b<span style="vertical-align: super">2</span>)
+<br><br>
+
+and
+
+θ = tan<span style="vertical-align: super">-1</span>(b/a) or θ = arctan(b/a)<br><br>
+
+ 
+
+and we also have: a = r cosθ and b = r sinθ
+<br><br>
+ 
+
+<br><br>
+
+<h2>Statement of DeMoivre's Theorem</h2>
+<br><br>
+Let 'n' be any rational number, positive or negative, then
+<br><br>
+[cos θ + i sin θ ]n = cos nθ + i sin nθ
+<br><br>
+
+Basically, in order to find the nth power of a complex number we need to take the nth power of the absolute value or length and multiply the argument by n.
+
+<br><br>
+
+Let z = r (cos θ + i sinθ) and n be a positive integer. Then z has n distinct nth roots given by:
+<br><br>
+r(1/n)[cos(&theta;+2k&Pi;/n)+isin(&theta;+2k&Pi;/n)]<br><br>
+, where k = 0, 1, 2, ... , n-1
+<br><br>
+ 
+
+De Moivre's Theorem states that for any complex number as given below:
+<br><br>
+z = r ∙ cosθ + i ∙ r ∙ sinθ
+
+the following statement is true:<br><br>
+zn = rn (cosθ + i ∙ sin(nθ)), where n is an integer.
+<br><br>
+If the imaginary part of the complex number is equal to zero or i = 0, we have:
+<br><br>
+z = r ∙ cosθ and zn = rn (cosθ)  
+<br><br>
+
+ 
+
+ 
+
+Exponential form of complex number:
+<br><br>
+z = reiθ where r is the modulus of z and θ is its argument.
+<br><br>
+
+ 
+
+ 
+<br><br>
+Example 1: Compute the three cube roots of -8.
+<br><br>
+Solution: Since -8 has the polar form 8 (cos π + i sin π), its three cube roots have the form
+<br><br>
+3√8 {cos[(π + 2πm)/3] + i sin[(π + 2πm)/3]} for m=0, 1, and 2.
+<br><br>
+ 
+
+Thus the roots are
+<br><br>
+ 2 (cos π/3 + i sin π/3) = 1 + √3 i,
+ <br><br>
+ 2 (cos π + i sin π) = -2, and
+ <br><br>
+2 (cos 5π/3 + i sin 5π/3) = 1 - √3 i.
+<br><br>
+ 
+
+ 
+<br><br>
+Example 2: Use De Moivre's Theorem to compute (1 + i)<span style="vertical-align: super">12</span>.
+<br><br>
+Solution:  The polar form of 1 + i is √2 (cos π/4 + isin π/4). Thus, by De Moivre's Theorem, we have:
+<br><br>
+ 
+
+(1 + i)<span style="vertical-align: super">12</span> = [√2 (cos π/4 + i sin π/4)]<span style="vertical-align: super">12</span>
+<br><br>
+= (√2)<span style="vertical-align: super">12</span>(cos π/4 + i sin π/4)<span style="vertical-align: super">12</span>
+<br><br>
+= 26 (cos 3π + i sin 3π)
+<br><br>
+= 64(cos π + i sin π)
+<br><br>
+= 64(-1) = -64.
+
+<br><br>
+
+ 
+<br><br>
+Example 3: Use De Moivre's Theorem to compute (√3 + i)<span style="vertical-align: super">5.</span>
+<br><br>
+Solution: It is straightforward to show that the polar form of √3 + i is 2(cos π/6 + i sin π/6). Thus we have:
+<br><br>
+ 
+
+(√3 + i)<span style="vertical-align: super">5 </span>= [2(cos π/6 + i sin π/6)]<span style="vertical-align: super">5
+</span><br><br>
+= 25(cos π/6 + i sin π/6)<span style="vertical-align: super">5
+</span><br><br>
+= 32(cos 5π/6 + i sin 5π/6)
+<br><br>
+= 32(-√3/2 + 1/2 i)
+<br><br>
+= -16√3 + 16 i.
+<br><br>
+ 
+
+ 
+<br><br>
+Example 4: Find the sixth roots of √3+i
+<br><br>
+Solution: The modulus of √3+i  is 2 and the argument is π/6.
+<br><br>
+The sixth roots are therefore
+<br><br>
+6√2(cos(&pi;/36)+isin(&pi;/36)),6√2(cos(13&pi;/36)+isin(13&pi;/36))<br><br>
+6√2(cos(25&pi;/36)+isin(25&pi;/36)) ,6√2(cos(37&pi;/36)+isin(37&pi;/36))<br><br>
+6√2(cos(49&pi;/36)+isin(49&pi;/36)),6√2(cos(61&pi;/36)+isin(61&pi;/36))<br><br>
+
+<br><br>
+
+</body>
+</html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operations</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+            *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+
+  color: #000000;
+  }
+  .navbar {
+    position:fixed;
+    display: flex;
+    top:0%;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(57, 177, 247);
+    z-index: 2000;
+    margin-bottom: 0px;
+  }
+
+  .navbar a {
+      margin: auto;
+    float: left;
+    font-size: 222%;
+    /* font-size: 150%; */
+    color: white;
+    text-align: center;
+    padding: 1% 1% 1% 5%;
+    margin-left: 6%;
+    font-style: italic;
+  }
+  .search-container{
+      display: flex;
+    float: left;
+    color: white;
+    text-align: center;
+      margin: auto;
+    text-decoration: none;
+
+  }
+  .search-button{
+      margin-top: 10px;
+      margin-left: 10px;
+      cursor: pointer;
+       padding: 10px;
+      border-radius: 10px;
+  }
+  .search-box{
+        padding:20px;
+      margin-left: 0px;
+        border-radius: 10px;
+      font-size: 15px;
+  }
+  .log{
+      margin: auto;
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 1.5% 2% 1% 1%;
+    text-decoration: none;
+
+  }
+  .lb{
+        color:blue;
+        
+        font-size: 150%;
+        padding:2% 5% 2% 2%;
+        font-family: serif;
+        cursor: pointer;
+        border: 2px solid paleturquoise;
+        border-radius: 5.5px;
+      }
+  .cart{
+    float: left;
+    padding:20px;
+    font-size: 100%;
+    cursor: pointer;
+
+  }
+  .cart img{
+      float: left;
+
+    width:20%;
+    height: 20%;
+    border-radius: 50%;
+  }
+  
+  body #div1{
+    margin-left: 10px;
+    /* font-size: 3rem; */
+    /* font-family: 'Courier New', Courier, monospace; */
+  }
+  .navbar2 {
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(253, 253, 255);
+    z-index: 2000;
+      /*position:fixed;  
+ top:1%;*/
+  }
+
+  a{
+      list-style-type: none;
+      text-decoration: none;
+}
+  .navbar2 a {
+    /* text-decoration: underline; */
+    float: left;
+    font-size: 200%;
+    color: rgb(20, 20, 20);
+    text-align: center;
+    padding: 1% 2% 1% 0%;
+    margin-left: 2%;
+    margin-top:6%;
+    font-style: italic;
+    color:rgb(245, 106, 106);
+    text-decoration: underline;
+    
+}
+a {
+    list-style-type: none;
+    text-decoration: none;
+  }
+  .navbar2 a:active{
+    
+    cursor: pointer;
+    color: #3916ff;
+  } 
+  
+    </style>
+  
+</head>
+<body>
+       
+  <header class="home" id="home">
+    <div class="dis">
+      <div class="navbar">
+        <a href="../css3.html">Maths Formula</a>
+        <div class="search-container">
+          <input type="text" placeholder="Search for Topics,Chapters..." name="search" class="search-box" size="40">
+          <div> <button type="submit" class="search-button"><i class="fa fa-search" style="color: blue;"></i></button>
+          </div>
+        </div>
+        <div class="log">
+          <button class="lb">Login</button>
+        </div>
+        <div class="cart">
+          <!--<div><img src="images/Logo.png" alt=""></div>-->
+          <div>
+            <a href="../Calculator/index.html" target="_blank" style="color: #ffffff;font-family: Arial, Helvetica, sans-serif; margin-left: 3px; margin-top: 5px;">
+              Calculator</a>
+          </div>
+
+        </div>
+      </div>
+      <div class="navbar2">
+        <a href="../algebra/algebraa.html" target="_blank">Algebra</a>
+        <a href="../gmtry/geometry.html" target="_blank">Geometry</a>
+        <a href="../matrices/matrix.html" target="_blank">Matrices</a>
+        <a href="../trigo/trigonometry.html" target="_blank">Trigonometry</a>
+        <a href="../calclus/calculus.html" target="_blank">Calculus</a>
+        <a href="../complex/complex_no.html" target="_blank">Complex Numbers</a>
+        <a href="../css3.html" target="_blank">Home</a>
+      </div>
+      
+      <div id="div1">
+          <br><br><br><br><br>
+          <h1>Algebraic Operations on Complex Numbers</h1>
+
+          <br><br>
+
+In performing operations with complex numbers we can proceed as in the algebra of real numbers replacing i<span style="vertical-align: super">2</span> by -1 when it occurs.
+<br><br><br>
+<h2>1.   Addition of Complex Numbers</h2>
+<br><br>
+(a+bi) + (c+di) = (a+c) + (b+d)i 
+<br><br>
+<br><br>
+
+Example:<br><br>
+z1 = 3 - 4i and z2 = -2 + 2i
+<br><br>
+z1 + z2 = (3 + (-2)) + (-4 + 2)i = 1 -2i
+<br><br>
+
+ 
+<br><br>
+<h2>2.   Subtraction of Complex Numbers</h2>
+<br><br>
+(a+bi) - (c+di) = (a-c)+ (b-d)i
+<br><br>
+ 
+<br><br>
+Example:<br><br>
+z1 = 3 - 4i and z2 = -2 + 2i
+<br><br>
+z1 - z2 = (3 - (-2)) - (-4 - 2)i = 5 +6i
+<br><br>
+<br><br>
+
+
+<h2>3.   Multiplication of Complex Numbers</h2><br><br>
+
+
+(a+bi)(c+di) = ac+bci+adi+bdi<span style="vertical-align: super">2</span>
+
+<br><br>
+        = (ac-bd)+(ad+bc)i
+        <br><br><br><br>
+ 
+Example:<br><br>
+z1 = 3 - 4i and z2 = -2 + 2i
+<br><br>
+z1 ∙ z2 = (3 ∙ (-2)) + (-4 ∙ (-2))i + (3 ∙ 2)i + (-4 ∙ 2)i<span style="vertical-align: super">2</span> = -6 + 14i -8i<span style="vertical-align: super">2</span>
+<br><br>
+
+ 
+<br><br>
+<h2>4.   Division of Complex Numbers</h2>
+<br><br>
+(a+bi)/(c+di)=(a+bi)/(c+di)×(c-di)/(c-di)
+<br><br>
+                    =(ac-adi+bci-bdi2</span>)/(c2</span>-d2i2</span>)
+                    <br><br>
+                    =(ac+bd+(bc-ad)i)/(c2</span>-d2i2</span>)
+                    <br><br>
+                    =(ac+bd)/(c2</span>+d2</span> )+(bc-ad)/(c2</span>+d2</span>) i
+                    <br><br>
+
+                    <br><br>
+                   
+Example:
+<br><br>
+z1 = 3 - 4i and z2 = -2 + 2i
+<br><br>
+z1 / z2 = (3 ∙ (-2) + (-4 ∙ 2))/((-2)<span style="vertical-align: super">2</span> + 22</span>) + (-4 ∙ (-2) - 3 ∙ 2)/((-2)2</span> + 22)i = -14/8 + (2/8)i = -7/4 + i/4
+<br><br>
+
+ 
+
+ 
+
+Inequalities in imaginary numbers are not defined. As for example z >0, 4 + zi < 2+4i are meaningless in complex numbers.
+<br><br>
+ 
+
+In real numbers, if a<span style="vertical-align: super">2</span> + b<span style="vertical-align: super">2</span>=0 then a=b=0; however in complex numbers,
+<br><br>
+
+z1<span style="vertical-align: super">2</span> + z2<span style="vertical-align: super">2</span> does not imply z1 = z2 = 0
+<br><br>
+ 
+
+Complex conjugation: The complex conjugate of a + bi is a − bi. The importance of the complex conjugate lies in the fact that the product of a complex number and its conjugate is a real number.
+<br><br>
+ 
+
+(a + bi)(a − bi) = (a  + b)
+<br><br>
+Additive identity: Additive identity is the complex number that represents the notion of zero for addition of complex numbers is 0 + 0i.
+<br><br>
+ 
+
+(a + bi) + (0 + 0i) = a + bi
+<br><br>
+Multiplicative identity: Multiplicative identity is the complex number that represents the notion of one for multiplication of complex numbers is 1+ 0i.
+<br><br>
+ (a + bi)(1+ 0i) = a + bi
+ <br><br>
+ 
+ 
+Example 1: Simplify (2√(-9) -3 )(3√(-16) - 1)
+<br><br>
+ 
+
+(2√(-9) -3 )(3√(-16) - 1)
+<br><br>
+=(2 · 3i - 3)(3 ·4i - 1)
+<br><br>
+=(6i - 3)(12i - 1)
+<br><br>
+= 72i2 – 36i – 6i + 3
+<br><br>
+= -69 – 42i
+<br><br>
+<br><br>
+Example 2: Express in the form a + bj given  z=2j/(2+3j)
+<br><br>
+(2i/2+3i)*(2-3i/2-3i)
+
+<br><br>
+4i-6i2/(4+9)
+<br><br>
+6+4i/13<br><br>
+
+<br><br>
+Example 3: Perform the division for the complex numbers (10+2i/10-2i)
+
+<br><br>
+Solution: The given complex numbers are (10+2i/10-2i) 
+<br><br>
+We have to reduce the denominator as well as the numerator by multiplying the numerator and denominator both by the complex number 10+2i.
+<br><br>
+
+
+Use the formula (a+ b) (a-b) = a<span style="vertical-align: super">2- b<span style="vertical-align: super">2 to reduce the denominators. Use the formula (a+ b) 2= a2+2ab+ b2 to reduce the numerators.
+<br><br>
+(10+2i)/(10-2i)=100+4i+i<span style="vertical-align: super">2</span>2<span style="vertical-align: super">2</span>/100-2<span style="vertical-align: super">2</span>i<span style="vertical-align: super">2</span><br><br>
+
+Add and also square the terms to get the values.
+<br><br>
+10+2i/10-2i=100=(100+4i+4i<span style="vertical-align: super">2</span>)/(100-4i<span style="vertical-align: super">2</span>)
+In the complex numbers the value for i<span style="vertical-align: super">2</span> is -1.
+<br><br>
+Substitute the value of i2 in the above equation to reduce the denominators.
+<br><br>
+10+2i/10-2i=100+40i+4(-1)/100-4(-1)<br><br>
+10+2i/10-2i=100+40i-4/100+4<br><br>
+10+2i/10-2i=96+40i/104<br><br>
+
+
+
+<br><br>
+Example 4: Find the product of the complex numbers 1+ i and √ 3- i in polar form.
+<br><br>
+Solution: We can easily find that the polar form of 1+ i and √ 3- i are respectively,
+<br><br>
+<img src="o1.PNG" alt=""><br><br>
+
+1+i=√ (cos&pi;/4+isin&pi;/4)<br><br>
+√ 3-1=2(cos(-&pi;/6)+isin(-&pi;/6))<br><br>
+
+We know that z1z2 = r1r2(cos(θ1+θ2) + isin(θ1 + θ2)). This formula says that to multiply two complex numbers we need to multiply the moduli and add the arguments. Therefore multiplying 1+ i and √ 3- i using the above rule, we will get:
+<br><br>
+(1+i)(√ 3-i)=2√ 2[cos(&pi;4-&pi;/6)+isin(&pi;4-&pi;/6)]
+<br><br>
+<br><br>
+Example 5: Simplify i<span style="vertical-align: super">64,002</span>.
+<br><br>
+Solution: i<span style="vertical-align: super">64,002</span> = i<span style="vertical-align: super">64,000</span> + 2 = i<span style="vertical-align: super">4 · 16,000 </span>+ 2 = i<span style="vertical-align: super">2</span> = –1.
+<br><br>
+<div id="link">
+  
+</body>
+</html>
+
+
