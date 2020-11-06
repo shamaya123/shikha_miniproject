@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>derivative_basics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+
+  color: #000000;
+  }
+  .navbar {
+    position:fixed;
+    display: flex;
+    top:0%;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(57, 177, 247);
+    z-index: 2000;
+    margin-bottom: 0px;
+  }
+
+  .navbar a {
+      margin: auto;
+    float: left;
+    font-size: 222%;
+    /* font-size: 150%; */
+    color: white;
+    text-align: center;
+    padding: 1% 1% 1% 5%;
+    margin-left: 6%;
+    font-style: italic;
+  }
+  .search-container{
+      display: flex;
+    float: left;
+    color: white;
+    text-align: center;
+      margin: auto;
+    text-decoration: none;
+
+  }
+  .search-button{
+      margin-top: 10px;
+      margin-left: 10px;
+      cursor: pointer;
+       padding: 10px;
+      border-radius: 10px;
+  }
+  .search-box{
+        padding:20px;
+      margin-left: 0px;
+        border-radius: 10px;
+      font-size: 15px;
+  }
+  .log{
+      margin: auto;
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 1.5% 2% 1% 1%;
+    text-decoration: none;
+
+  }
+  .lb{
+        color:blue;
+        
+        font-size: 150%;
+        padding:2% 5% 2% 2%;
+        font-family: serif;
+        cursor: pointer;
+        border: 2px solid paleturquoise;
+        border-radius: 5.5px;
+      }
+  .cart{
+    float: left;
+    padding:20px;
+    font-size: 100%;
+    cursor: pointer;
+
+  }
+  .cart img{
+      float: left;
+
+    width:20%;
+    height: 20%;
+    border-radius: 50%;
+  }
+  
+  body #div1{
+    margin-left: 10px;
+    /* font-size: 3rem; */
+    /* font-family: 'Courier New', Courier, monospace; */
+  }
+  .navbar2 {
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(253, 253, 255);
+    z-index: 2000;
+      /*position:fixed;  
+ top:1%;*/
+  }
+
+  a{
+      list-style-type: none;
+      text-decoration: none;
+}
+  .navbar2 a {
+    /* text-decoration: underline; */
+    float: left;
+    font-size: 200%;
+    color: rgb(20, 20, 20);
+    text-align: center;
+    padding: 1% 2% 1% 0%;
+    margin-left: 2%;
+    margin-top:6%;
+    font-style: italic;
+    color:rgb(245, 106, 106);
+    text-decoration: underline;
+    
+}
+a {
+    list-style-type: none;
+    text-decoration: none;
+  }
+  .navbar2 a:active{
+    
+    cursor: pointer;
+    color: #3916ff;
+  } 
+  
+    </style>
+
+</head>
+<body>
+    
+  <header class="home" id="home">
+    <div class="dis">
+      <div class="navbar">
+        <a href="../css3.html">Maths Formula</a>
+        <div class="search-container">
+          <input type="text" placeholder="Search for Topics,Chapters..." name="search" class="search-box" size="40">
+          <div> <button type="submit" class="search-button"><i class="fa fa-search" style="color: blue;"></i></button>
+          </div>
+        </div>
+        <div class="log">
+          <button class="lb">Login</button>
+        </div>
+        <div class="cart">
+          <!--<div><img src="images/Logo.png" alt=""></div>-->
+          <div>
+            <a href="../Calculator/index.html" target="_blank" style="color: #ffffff;font-family: Arial, Helvetica, sans-serif; margin-left: 3px; margin-top: 5px;">
+              Calculator</a>
+          </div>
+
+        </div>
+      </div>
+      <div class="navbar2">
+        <a href="../algebra/algebraa.html" target="_blank">Algebra</a>
+        <a href="../gmtry/geometry.html" target="_blank">Geometry</a>
+        <a href="../matrices/matrix.html" target="_blank">Matrices</a>
+        <a href="../trigo/trigonometry.html" target="_blank">Trigonometry</a>
+        <a href="../calclus/calculus.html" target="_blank">Calculus</a>
+        <a href="../complex/complex_no.html" target="_blank">Complex Numbers</a>
+        <a href="../css3.html" target="_blank">Home</a>
+      </div>
+      <div id="div1"><br><br><br><br><br>          <h1>
+              Derivative Basics
+          </h1><br><br>
+        The slope of a curve y = f(x) at the point P means the slope of the tangent at the point P. We need to find this slope to solve many applications since it tells us the rate of change at a particular instant.
+<br><br>
+        We write y = f(x) on the curve since y is a function of x. That is, as x varies, y also varies.
+        <br><br>
+        Delta Notation<br><br>
+        In this notation, we denote
+        <br><br>
+        change in y as Δy
+        <br><br>
+        change in x as Δx
+        <br><br>
+        
+        By definition, the slope is given by:
+        <br><br>
+        
+        
+        
+        Using the above formula, we can find the slope of a curve.
+        <br><br>
+        <br><br>
+        Example 1: Find the slope of the curve y = x<span style="vertical-align: super">2</span> at the point (2,4).
+        <br><br>
+        Solution : We start with a point Q(1, 1) which is near P(2,4):
+        <br><br>
+        <img src="c1.PNG" alt=""><br><br>
+        
+          
+        
+        The slope of PQ is given by:
+        <br><br>
+        m = (y<span style="vertical-align: super">2</span>-y<span style="vertical-align: super">1</span>)/(x<span style="vertical-align: super">2</span>-x<span style="vertical-align: super">1</span>) = (4-1)/(2-1) = 3
+        <br><br>
+        
+        Now we move Q further around the curve so it is closer to P. Let's use Q(1.5,2.25) which is closer to P(2,4):
+        <br><br>
+        <img src="c2.PNG" alt="">
+        The slope of PQ is now given by:
+        <br><br>
+        m = (y<span style="vertical-align: super">2</span>-y<span style="vertical-align: super">1</span>)/(x<span style="vertical-align: super">2</span>-x<span style="vertical-align: super">1</span>) = (4-2.25)/(2-1.5) = 3.5
+        <br><br>
+        
+        
+        We see that this is already a pretty good approximation to the tangent at P, but not good enough.
+        <br><br>
+        Now we move Q even closer to P, say Q(1.9,3.61).
+        <br><br>
+        Now we have:
+        <br><br>
+          <img src="c3.PNG" alt="">
+        
+        So
+        m = (y<span style="vertical-align: super">2</span>-y<span style="vertical-align: super">1</span>)/(x<span style="vertical-align: super">2</span>-x<span style="vertical-align: super">1</span>) = (4-3.61)/(2-1.9) = 3.9
+        <br><br>
+        We can see that we are very close to the required slope.
+        <br><br>
+        Now if Q is moved to (1.99,3.9601), then slope PQ is 3.99.
+        <br><br>
+        
+        If Q is (1.999,3.996001), then the slope is 3.999.
+        <br><br>
+        Clearly, as x → 2, the slope of PQ → 4. But notice that we cannot actually let x = 2, since the fraction for m would have 0 on the bottom, and so it would be undefined.
+        <br><br>
+        We have found that the rate of change of y with respect to x is 4 units at the point x = 2.
+        <br><br>
+        Definition<br><br>
+        The derivative of f(x) with respect to x is the function f ’(x) and is defined as
+        ……………….(1)<br><br>
+        We often read f ‘(x) as “f  prime of x” and f ‘(x) =dy/dx
+        <br><br>
+        
+        Moreover
+        
+        <br><br>
+        Equation (1) gives the instantaneous rate of change of y with respect to x.
+        <br><br>
+        This is equivalent to the following (where before we were using h for Δx):
+        <br><br>
+        
+        We will also come across the following for delta method:
+        <br><br>
+        
+        Notation for the Derivative
+        <br><br>
+        IMPORTANT: The derivative (also called differentiation) can be written in several ways. This can cause some confusion when we first learn about differentiation.
+        <br><br>
+        
+        The following are equivalent ways of writing the first derivative of y = f(x):
+        <br><br>
+        dy/dx = f ’(x) = y’
+        <br><br>
+        
+        <br><br>
+        Example 2: Find dy/dx using delta method (or definition) if y = 2x<span style="vertical-align: super">2</span>+ 3x
+        <br><br>
+        Solution:
+        <br><br>
+        f(x) = y = 2x<span style="vertical-align: super">2</span>+ 3x, so
+        <br><br>
+        
+        f(x + h)
+        <br><br>
+        = 2(x + h)<span style="vertical-align: super">2</span> + 3(x + h)
+        <br><br>
+        =2(x<span style="vertical-align: super">2</span> + 2xh + h<span style="vertical-align: super">2</span>) + 3x + 3h
+        <br><br>
+        =2x<span style="vertical-align: super">2</span> + 4xh + 2h<span style="vertical-align: super">2</span> + 3x + 3h
+        <br><br>
+        
+        We now need to find: dy/dx
+        <br><br>
+        
+        
+        We have found an expression that can give us the slope of the tangent anywhere on the curve.
+        <br><br>
+        If x = -2, the slope is 4(-2) + 3 = -5 (red, in the graph below)
+        <br><br>
+        If x = 1, the slope is 4(1) + 3 = 7 (green)
+        <br><br>
+        If x = 4, the slope is 4(4) + 3 = 19 (black)
+        <br><br>
+        
+        We can observe that our manipulations are correct when we graph the curve which is a parabola in shape and observe the slopes of the tangents. 
+        <br><br>
+        <img src="c4.PNG" alt="">
+        This is what makes calculus so powerful. We can find the slope anywhere on the curve (i.e. the rate of change of the function anywhere).
+        <br><br>
+        <br><br>
+        Example 3:
+        <br><br>
+        a. Find y' for y = x<span style="vertical-align: super">2</span> + 4x.
+        <br><br>
+        b. Find the slope of the tangent where x = 1 and also where x = -6.
+        <br><br>
+        c. Sketch the curve and both tangents.
+        <br><br>
+        Solution:
+        <br><br>
+        a. Note: y' means "the first derivative". This can also be written as dy/dx.
+        <br><br>
+         
+        for f(x) = x<span style="vertical-align: super">2</span> + 4x we have:
+        <br><br>
+        f(x + h) = (x + h)<span style="vertical-align: super">2</span> + 4(x + h)
+        <br><br>
+          = x<span style="vertical-align: super">2</span> + 2xh + h<span style="vertical-align: super">2</span> + 4x + 4h
+          <br><br>
+        So
+        <br><br>
+        
+        
+        b. When x = 1, m = 2(1) + 4 = 6
+        <br><br>
+          When x = -6, m = 2(-6) + 4 = -8
+          <br><br>
+        
+        c. Sketch:
+        <br><br>
+        <img src="c5.PNG" alt="">
+        <br><br>
+      </div>
+      
+</body>
+</html>

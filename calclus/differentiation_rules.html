@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>differentiation_rules</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+
+  color: #000000;
+  }
+  .navbar {
+    position:fixed;
+    display: flex;
+    top:0%;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(57, 177, 247);
+    z-index: 2000;
+    margin-bottom: 0px;
+  }
+
+  .navbar a {
+      margin: auto;
+    float: left;
+    font-size: 222%;
+    /* font-size: 150%; */
+    color: white;
+    text-align: center;
+    padding: 1% 1% 1% 5%;
+    margin-left: 6%;
+    font-style: italic;
+  }
+  .search-container{
+      display: flex;
+    float: left;
+    color: white;
+    text-align: center;
+      margin: auto;
+    text-decoration: none;
+
+  }
+  .search-button{
+      margin-top: 10px;
+      margin-left: 10px;
+      cursor: pointer;
+       padding: 10px;
+      border-radius: 10px;
+  }
+  .search-box{
+        padding:20px;
+      margin-left: 0px;
+        border-radius: 10px;
+      font-size: 15px;
+  }
+  .log{
+      margin: auto;
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 1.5% 2% 1% 1%;
+    text-decoration: none;
+
+  }
+  .lb{
+        color:blue;
+        
+        font-size: 150%;
+        padding:2% 5% 2% 2%;
+        font-family: serif;
+        cursor: pointer;
+        border: 2px solid paleturquoise;
+        border-radius: 5.5px;
+      }
+  .cart{
+    float: left;
+    padding:20px;
+    font-size: 100%;
+    cursor: pointer;
+
+  }
+  .cart img{
+      float: left;
+
+    width:20%;
+    height: 20%;
+    border-radius: 50%;
+  }
+  
+  body #div1{
+    margin-left: 10px;
+    /* font-size: 3rem; */
+    /* font-family: 'Courier New', Courier, monospace; */
+  }
+  .navbar2 {
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(253, 253, 255);
+    z-index: 2000;
+      /*position:fixed;  
+ top:1%;*/
+  }
+
+  a{
+      list-style-type: none;
+      text-decoration: none;
+}
+  .navbar2 a {
+    /* text-decoration: underline; */
+    float: left;
+    font-size: 200%;
+    color: rgb(20, 20, 20);
+    text-align: center;
+    padding: 1% 2% 1% 0%;
+    margin-left: 2%;
+    margin-top:6%;
+    font-style: italic;
+    color:rgb(245, 106, 106);
+    text-decoration: underline;
+    
+}
+a {
+    list-style-type: none;
+    text-decoration: none;
+  }
+  .navbar2 a:active{
+    
+    cursor: pointer;
+    color: #3916ff;
+  } 
+  
+    </style>
+</head>
+<body>
+    
+  <header class="home" id="home">
+    <div class="dis">
+      <div class="navbar">
+        <a href="../css3.html">Maths Formula</a>
+        <div class="search-container">
+          <input type="text" placeholder="Search for Topics,Chapters..." name="search" class="search-box" size="40">
+          <div> <button type="submit" class="search-button"><i class="fa fa-search" style="color: blue;"></i></button>
+          </div>
+        </div>
+        <div class="log">
+          <button class="lb">Login</button>
+        </div>
+        <div class="cart">
+          <!--<div><img src="images/Logo.png" alt=""></div>-->
+          <div>
+            <a href="../Calculator/index.html" target="_blank" style="color: #ffffff;font-family: Arial, Helvetica, sans-serif; margin-left: 3px; margin-top: 5px;">
+              Calculator</a>
+          </div>
+
+        </div>
+      </div>
+      <div class="navbar2">
+        <a href="../algebra/algebraa.html" target="_blank">Algebra</a>
+        <a href="../gmtry/geometry.html" target="_blank">Geometry</a>
+        <a href="../matrices/matrix.html" target="_blank">Matrices</a>
+        <a href="../trigo/trigonometry.html" target="_blank">Trigonometry</a>
+        <a href="../calclus/calculus.html" target="_blank">Calculus</a>
+        <a href="../complex/complex_no.html" target="_blank">Complex Numbers</a>
+        <a href="../css3.html" target="_blank">Home</a>
+      </div>
+      <div id="div1"><br><br><br><br><br>
+        <h1>
+          Differentiation Rules
+        </h1><br><br><br><br>
+        Chain Rule<br><br>
+(f o g)'=(f' o g)g'<br><br>
+
+        Inverse Function<br><br>
+        (f-1)'=(1/f)=(1/f'o f-1)<br><br>
+        
+        Linearity<br><br>
+        (c.f)'=cf', where c is a constant<br><br>
+        (f+g)'=f'+g'<br><br>
+        
+        
+        Product Rule<br><br>
+        (fg)'=f'g+fg'
+        <br><br>
+        Quotient Rule<br><br>
+        (f/g)=(f'g-fg')/g<span style="vertical-align: super">2</span> ,where g isnot = 0<br><br>
+        
+        Reciprocal Rule<br><br>
+        (1/f)=-f'/f<span style="vertical-align: super">2</span><br><br>
+        
+        
+        Differentiation of Implicit Functions<br><br>
+        If an equation is expressed as y = f(x), then y is said to be the explicit function of x. However if y is connected with x by an expression f (x, y) = 0, then y is said to an implicit function of x. For e.g. x<span style="vertical-align: super">2</span> + 3xy + y<span style="vertical-align: super">2</span> = 0.
+        <br><br>
+        For differentiating the implicit function we differentiate each term with respect to x keeping in mind that if there is a term contains powers of y, we differentiate first with respect to y and then multiply it by dy/dx to get its differentiation with respect to x.
+        <br><br><br><br>
+        Example 1:<br><br>
+        d(3x<span style="vertical-align: super">2</span>)/dx(x<span style="vertical-align: super">2</span>+1)=(6x<span style="vertical-align: super">2</span>(x<span style="vertical-align: super">2</span>+1)-3x<span style="vertical-align: super">2</span>.2x)/(x<span style="vertical-align: super">2</span>+1)<span style="vertical-align: super">2</span><br><br>
+        
+        =(6x<span style="vertical-align: super">3</span>+6x-6x<span style="vertical-align: super">3</span>)/(x<span style="vertical-align: super">2</span>+1)<span style="vertical-align: super">2</span><br><br>
+
+        6x/(x2+1)<span style="vertical-align: super">2</span><br><br><br><br>
+        Example 2: Calculate dy/dx for x<span style="vertical-align: super">3</span>-3y<span style="vertical-align: super">2</span>=21<br><br>
+        Differentiating both side of equation with respect to x, and using The Sum Rule:
+        <br><br>
+        d(4x<span style="vertical-align: super">3</span>)/dx-d(3y<span style="vertical-align: super">2</span>)/dx=d(21)/dx<br><br>
+        
+        
+        Now using The Chain Rule which leads to:<br><br>
+        
+        12x<span style="vertical-align: super">3</span>-3d(y)/dyxd(y)/dx=0<br><br>
+        12x<span style="vertical-align: super">2</span>-6yd(y)/dx=0<br><br>
+        d(y)/dx=12x<span style="vertical-align: super">2</span>/6y<br><br><br><br>
+        
+        Example 3: Differentiate- g(x)=2x/2x-3x<br><br>
+        g'(x)=(2x-3x)D{2x}-(2x)D{2x-3x}/{2x-3x}<span style="vertical-align: super">2</span><br><br>
+
+        
+        Recall that D{ax} =axlna<br><br>
+        (2x-3x)(2xln2)-2x(2xln2-3xln3)/(x-3x)<span style="vertical-align: super">2</span><br><br>
+        2x<span style="vertical-align: super">2</span>xln2-3x<span style="vertical-align: super">2</span>xln2-(2x<span style="vertical-align: super">2</span>xln2-2x3xln3)/(2x-3x)<span style="vertical-align: super">2</span><br><br>
+        
+        
+        
+        Recall that axax = ax+x = a<span style="vertical-align: super">2</span>x and axbx = (ab)x<br><br>
+        22xln2-6xln2-(22xln2-6xln3)/(2x-3x)<span style="vertical-align: super">2</span><br><br>
+        22xln2-6xln2-22xln2+6xln3/(2x-3x)<span style="vertical-align: super">2</span><br><br>
+        6x(ln3-ln2)/(2x-3x)<span style="vertical-align: super">2</span><br><br>
+        
+        Recall that lnA – lnB = ln(A/B)<br><br>
+        6xln(3/2)/(2x-3x)<span style="vertical-align: super">2</span>
+        <br><br><br><br>
+        
+        
+        
+        Example 4: Differentiate -:f(x)=(x<span style="vertical-align: super">2</span>+1)<span style="vertical-align: super">3</span>/x<span style="vertical-align: super">2</span>+1<br><br>
+        
+        f'(x)=(x<span style="vertical-align: super">2</span>+1)D{(x<span style="vertical-align: super">2</span>+1)}-(x<span style="vertical-align: super">2</span>-1)<span style="vertical-align: super">3</span> D{x<span style="vertical-align: super">2</span>+1}/(x<span style="vertical-align: super">2</span>+1)<span style="vertical-align: super">2</span><br><br>
+        (x<span style="vertical-align: super">2</span>+1)3(x<span style="vertical-align: super">2</span>-1)<span style="vertical-align: super">2</span> D{x<span style="vertical-align: super">2</span>-1}-(x<span style="vertical-align: super">2</span>-1)3(2x)<br><br>
+        (x<span style="vertical-align: super">2</span>+1)3(x<span style="vertical-align: super">2</span>-1)2(2x)-(x<span style="vertical-align: super">2</span>-1)<span style="vertical-align: super">3</span>(2x)/(x<span style="vertical-align: super">2</span>+1)<span style="vertical-align: super">2</span><br><br>
+        Factor 2x and (x<span style="vertical-align: super">2</span> – 1)<span style="vertical-align: super">2</span> from the numerator<br><br>
+        2x(x<span style="vertical-align: super">2</span>-1)2[3(x<span style="vertical-align: super">2</span>+1)-(x<span style="vertical-align: super">2</span>+1)]/(x<span style="vertical-align: super">2</span>-1)<span style="vertical-align: super">2</span><br><br>
+        2x(x<span style="vertical-align: super">2</span>-1)<span style="vertical-align: super">2</span>(3x<span style="vertical-align: super">2</span>+3-x<span style="vertical-align: super">2</span>+1)/(x<span style="vertical-align: super">2</span>+1)<span style="vertical-align: super">2</span><br><br>
+        2x(x<span style="vertical-align: super">2</span>-1)(2x<span style="vertical-align: super">2</span>+4)/(x<span style="vertical-align: super">2</span>+1)<span style="vertical-align: super">2</span><br><br>
+        2x(x<span style="vertical-align: super">2</span>-1)<span style="vertical-align: super">2</span>.2(x<span style="vertical-align: super">2</span>+2)/(x<span style="vertical-align: super">2</span>+1)<span style="vertical-align: super">2</span><br><br>
+        4x(x<span style="vertical-align: super">2</span>-1)<span style="vertical-align: super">2</span>(x<span style="vertical-align: super">2</span>+2)/(x<span style="vertical-align: super">2</span>+1)<span style="vertical-align: super">3</span><br><br><br><br>
+      </div>
+      <div id="link">
+        
+</body>
+</html>

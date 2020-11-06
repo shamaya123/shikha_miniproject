@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>derivative_functions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+
+  color: #000000;
+  }
+  .navbar {
+    position:fixed;
+    display: flex;
+    top:0%;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(57, 177, 247);
+    z-index: 2000;
+    margin-bottom: 0px;
+  }
+
+  .navbar a {
+      margin: auto;
+    float: left;
+    font-size: 222%;
+    /* font-size: 150%; */
+    color: white;
+    text-align: center;
+    padding: 1% 1% 1% 5%;
+    margin-left: 6%;
+    font-style: italic;
+  }
+  .search-container{
+      display: flex;
+    float: left;
+    color: white;
+    text-align: center;
+      margin: auto;
+    text-decoration: none;
+
+  }
+  .search-button{
+      margin-top: 10px;
+      margin-left: 10px;
+      cursor: pointer;
+       padding: 10px;
+      border-radius: 10px;
+  }
+  .search-box{
+        padding:20px;
+      margin-left: 0px;
+        border-radius: 10px;
+      font-size: 15px;
+  }
+  .log{
+      margin: auto;
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 1.5% 2% 1% 1%;
+    text-decoration: none;
+
+  }
+  .lb{
+        color:blue;
+        
+        font-size: 150%;
+        padding:2% 5% 2% 2%;
+        font-family: serif;
+        cursor: pointer;
+        border: 2px solid paleturquoise;
+        border-radius: 5.5px;
+      }
+  .cart{
+    float: left;
+    padding:20px;
+    font-size: 100%;
+    cursor: pointer;
+
+  }
+  .cart img{
+      float: left;
+
+    width:20%;
+    height: 20%;
+    border-radius: 50%;
+  }
+  
+  body #div1{
+    margin-left: 10px;
+    /* font-size: 3rem; */
+    /* font-family: 'Courier New', Courier, monospace; */
+  }
+  .navbar2 {
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(253, 253, 255);
+    z-index: 2000;
+      /*position:fixed;  
+ top:1%;*/
+  }
+
+  a{
+      list-style-type: none;
+      text-decoration: none;
+}
+  .navbar2 a {
+    /* text-decoration: underline; */
+    float: left;
+    font-size: 200%;
+    color: rgb(20, 20, 20);
+    text-align: center;
+    padding: 1% 2% 1% 0%;
+    margin-left: 2%;
+    margin-top:6%;
+    font-style: italic;
+    color:rgb(245, 106, 106);
+    text-decoration: underline;
+}
+a {
+    list-style-type: none;
+    text-decoration: none;
+  }
+  .navbar2 a:active{
+    
+    cursor: pointer;
+    color: #3916ff;
+  } 
+  
+    </style>
+</head>
+<body>
+    
+  <header class="home" id="home">
+    <div class="dis">
+      <div class="navbar">
+        <a href="../css3.html">Maths Formula</a>
+        <div class="search-container">
+          <input type="text" placeholder="Search for Topics,Chapters..." name="search" class="search-box" size="40">
+          <div> <button type="submit" class="search-button"><i class="fa fa-search" style="color: blue;"></i></button>
+          </div>
+        </div>
+        <div class="log">
+          <button class="lb">Login</button>
+        </div>
+        <div class="cart">
+          <!--<div><img src="images/Logo.png" alt=""></div>-->
+          <div>
+            <a href="../Calculator/index.html" target="_blank" style="color: #ffffff;font-family: Arial, Helvetica, sans-serif; margin-left: 3px; margin-top: 5px;">
+              Calculator</a>
+          </div>
+
+        </div>
+      </div>
+      <div class="navbar2">
+        <a href="../algebra/algebraa.html" target="_blank">Algebra</a>
+        <a href="../gmtry/geometry.html" target="_blank">Geometry</a>
+        <a href="../matrices/matrix.html" target="_blank">Matrices</a>
+        <a href="../trigo/trigonometry.html" target="_blank">Trigonometry</a>
+        <a href="../calclus/calculus.html" target="_blank">Calculus</a>
+        <a href="../complex/complex_no.html" target="_blank">Complex Numbers</a>
+        <a href="../css3.html" target="_blank">Home</a>
+      </div>
+      <div id="div1">
+        <br><br><br><br><br>
+        <h1>Derivatives of Functions:</h1><br><br><br><br>
+        The Constant Rule<br><br>
+        The derivative of a constant function is 0. That is, if c is a real number, then d[c]/dx = 0.
+        <br><br>
+
+        
+        The Sum and Difference Rules
+        <br><br>
+        The sum (or difference) of two differentiable functions is differentiable and is the sum (or difference) of their derivatives.
+        <br><br>
+        
+        
+        The Constant Multiple Rule
+        <br><br>
+        If f is a differentiable function and c is a real number, then cf is also differentiable and
+        <br><br>
+        
+        The Product Rule
+        <br><br>
+        The product of two differentiable functions, f and g, is itself differentiable. Moreover, the derivative of fg is the first function times the derivative of the second, plus the second function times the derivative of the first.
+        
+        <br><br>
+        
+        The Quotient Rule
+        <br><br>
+        The quotient f/g, of two differentiable functions, f and g, is itself differentiable at all values of x for which g(x) does not = 0. Moreover, the derivative of f/g is given by the denominator times the derivative of the numerator minus the numerator times the derivative of the denominator divided by the square of the denominator.
+      
+        ;  g(x) ≠ 0<br><br>
+
+        
+        
+        The Chain Rule
+        <br><br>
+        If y = f(u) is a differentiable function of u and u = g(x) is a differentiable function of x, then y = f(g(x)) is a differentiable function of x and
+        <br><br>
+        
+        <br><br>
+        Example 1: Find y´ if y = (2x<span style="vertical-align: super">2</span> + 6x)(2x<span style="vertical-align: super">3</span> + 5x<span style="vertical-align: super">2</span>)
+        <br><br>
+        Solution : To calculate y´ we need to use the product rule as follows:
+        <br><br>
+        
+        
+        Then we can write,
+        <br><br>
+        <br><br>
+        Example 2: Find the derivative of  y = 13x<span style="vertical-align: super">4</span> – 6x<span style="vertical-align: super">3</span> – x- 1
+        <br><br>
+        Solution: Now, taking each term in turn:
+        <br><br>d(13x<span style="vertical-align: super">4</span>)=52x<span style="vertical-align: super">3</span> ...... (using-d(x<span style="vertical-align: super">n</span>)/dx=nx<span style="vertical-align: super">n-1</span>)<br><br>
+        d(-6x<span style="vertical-align: super">3</span>)/dx=-18x2<span style="vertical-align: super"> </span>  .......(using-d(x<span style="vertical-align: super">n</span>)/dx=nx<span style="vertical-align: super">n-1</span>)<br><br>
+        d(-x)/dx=-1........(since :-x=(-x<span style="vertical-align: super">1</span>)and so the derivative wil be  -(x<span style="vertical-align: super">0</span>)=-1)<br><br>
+        d(-1)/dx=0......(since : dc/dx=0)<br><br>
+        So, dy/dx=52x<span style="vertical-align: super">3</span>-18x<span style="vertical-align: super">2</span>-1  
+        
+        <br><br>
+        Example 3: Find the derivative of y = ln(g(x)) = ln(5x<span style="vertical-align: super">2</span>)
+        <br><br>
+        Solution:
+        <br><br>
+        Then we apply the chain rule, first by identifying the parts:
+        <br><br>
+        y = f(u) = in(u) and u = g(x) = 5x<span style="vertical-align: super">2</span>
+        <br><br>
+         
+        Now, take the derivative of each part:
+        <br><br>
+        y´ = 1/ u and u´= 10x
+        <br><br>
+         
+        And finally, multiply according to the rule.
+        <br><br>
+        dy/dx=dy/du*du/dx=1*10x/u
+        <br><br>
+        Now, replace the u with 5x<span style="vertical-align: super">2</span>, and simplify
+        <br><br>
+        dy/dx=1/52*10x=2/x or dy/dx=2(x)<span style="vertical-align: super">-1</span>
+        <br><br>
+        Note that the generalized natural log rule is a special case of the chain rule:
+        <br><br>
+        Given that f(u) = ln(u) and u = g(x) and y = ln(g(x))
+        <br><br>
+           
+        Then the derivative of y with respect to x is defined as:
+        <br><br>
+        dy/dx=i/u*dg/dx=1/g(x)*dg/dx
+        <br><br>
+        
+        <br><br>
+        Example 4: Evaluate
+        <br><br>
+        d(x<span style="vertical-align: super">2</span>+1)/dx(tan<span style="vertical-align: super">-1</span>x)
+        <br><br>
+        
+        Solution :
+        <br><br>
+        d(u/v)/d=(du/dx)*v-u(dv/dx)/v<span style="vertical-align: super">2</span>
+        <br><br>
+        Where u = x<span style="vertical-align: super">2</span> + 1 and v = tan<span style="vertical-align: super">-1</span>(x)
+        <br><br>
+        tan<span style="vertical-align: super">-1</span>(x)d(x<span style="vertical-align: super">2</span>+1)/dx-(x<span style="vertical-align: super">2</span>+1)d(tan<span style="vertical-align: super">-1</span>(x))/tan<span style="vertical-align: super">2</span>
+        <br><br>
+        
+        The derivative of a sum is the sum of the derivatives
+        <br><br>
+        tan<span style="vertical-align: super">-1</span>(x)d(x<span style="vertical-align: super">2</span>)/dx-(x<span style="vertical-align: super">2</span>+1)d(tan<span style="vertical-align: super">-1</span>(x))/tan<span style="vertical-align: super">-1</span>(x)<span style="vertical-align: super">2</span>
+        <br><br>
+                The derivative of the constant 1 is 0.
+                <br><br>
+        (2xtan<span style="vertical-align: super">-1</span>x(x<span style="vertical-align: super-">2</span>+1)d(tan-<span style="vertical-align: super">1</span>(x))/dx)/tan<span style="vertical-align: super">-1</span>(x)<span style="vertical-align: super">2</span>
+        <br><br>
+        
+        The derivative of x<span style="vertical-align: super">2</span> is 2x<span style="vertical-align: super">2</span>-1
+        <br><br>
+        
+        The derivative of tan<span style="vertical-align: super">-1</span>(x) is 1/(x<span style="vertical-align: super">2</span>+1)
+        <br><br>
+      =  2xtan<span style="vertical-align: super">-1</span>x-1/tan<span style="vertical-align: super">-1</span>(x)<span style="vertical-align: super">2</span>
+      <br><br>
+
+      <br><br>
+      </div>
+      
+</body>
+</html>
